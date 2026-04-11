@@ -1,0 +1,120 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e4]:
+      - link "DesignWaiz" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: DesignWaiz
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - text: Home
+        - listitem [ref=e10]:
+          - link "Designs" [ref=e11] [cursor=pointer]:
+            - /url: /designs
+            - text: Designs
+        - listitem [ref=e13]:
+          - link "Guides" [ref=e14] [cursor=pointer]:
+            - /url: /guides
+            - text: Guides
+        - listitem [ref=e15]:
+          - link "About Us" [ref=e16] [cursor=pointer]:
+            - /url: /about
+            - text: About Us
+      - link "Book Free Consultation" [ref=e18] [cursor=pointer]:
+        - /url: /#consultation
+  - main [ref=e19]:
+    - generic [ref=e20]: Loading...
+  - contentinfo [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "DesignWaiz" [level=3] [ref=e25]
+          - paragraph [ref=e26]: Transforming spaces into stunning, functional environments. Your dream home is just a consultation away.
+          - generic [ref=e27]:
+            - link "Instagram" [ref=e28] [cursor=pointer]:
+              - /url: https://instagram.com/designwaiz
+              - img [ref=e29]
+            - link "Facebook" [ref=e32] [cursor=pointer]:
+              - /url: https://facebook.com/designwaiz
+              - img [ref=e33]
+            - link "YouTube" [ref=e35] [cursor=pointer]:
+              - /url: https://youtube.com/@designwaiz
+              - img [ref=e36]
+            - link "LinkedIn" [ref=e39] [cursor=pointer]:
+              - /url: https://linkedin.com/company/designwaiz
+              - img [ref=e40]
+        - generic [ref=e44]:
+          - heading "Quick Links" [level=4] [ref=e45]
+          - list [ref=e46]:
+            - listitem [ref=e47]:
+              - link "Home" [ref=e48] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e49]:
+              - link "Designs" [ref=e50] [cursor=pointer]:
+                - /url: /designs
+            - listitem [ref=e51]:
+              - link "Guides" [ref=e52] [cursor=pointer]:
+                - /url: /guides
+            - listitem [ref=e53]:
+              - link "About Us" [ref=e54] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e55]:
+              - link "Contact" [ref=e56] [cursor=pointer]:
+                - /url: /#consultation
+        - generic [ref=e57]:
+          - heading "Design Categories" [level=4] [ref=e58]
+          - list [ref=e59]:
+            - listitem [ref=e60]:
+              - link "Modular Kitchen" [ref=e61] [cursor=pointer]:
+                - /url: /designs?category=modular-kitchen
+            - listitem [ref=e62]:
+              - link "Wardrobe" [ref=e63] [cursor=pointer]:
+                - /url: /designs?category=wardrobe
+            - listitem [ref=e64]:
+              - link "Living Room" [ref=e65] [cursor=pointer]:
+                - /url: /designs?category=living-room
+            - listitem [ref=e66]:
+              - link "Master Bedroom" [ref=e67] [cursor=pointer]:
+                - /url: /designs?category=master-bedroom
+            - listitem [ref=e68]:
+              - link "TV Unit" [ref=e69] [cursor=pointer]:
+                - /url: /designs?category=tv-unit
+            - listitem [ref=e70]:
+              - link "Bathroom" [ref=e71] [cursor=pointer]:
+                - /url: /designs?category=bathroom
+            - listitem [ref=e72]:
+              - link "Corporate Office" [ref=e73] [cursor=pointer]:
+                - /url: /designs?category=corporate-office
+        - generic [ref=e74]:
+          - heading "Contact Us" [level=4] [ref=e75]
+          - list [ref=e76]:
+            - listitem [ref=e77]:
+              - img [ref=e78]
+              - generic [ref=e81]: Delhi NCR, India
+            - listitem [ref=e82]:
+              - img [ref=e83]
+              - link "+91-99999 99999" [ref=e85] [cursor=pointer]:
+                - /url: tel:+919999999999
+            - listitem [ref=e86]:
+              - img [ref=e87]
+              - link "hello@designwaiz.com" [ref=e90] [cursor=pointer]:
+                - /url: mailto:hello@designwaiz.com
+            - listitem [ref=e91]:
+              - img [ref=e92]
+              - generic [ref=e95]: Mon-Sat, 10 AM - 7 PM
+      - generic [ref=e96]:
+        - paragraph [ref=e97]: © 2026 DesignWaiz. All rights reserved.
+        - generic [ref=e98]:
+          - link "Privacy Policy" [ref=e99] [cursor=pointer]:
+            - /url: /privacy
+          - generic [ref=e100]: "|"
+          - link "Terms of Service" [ref=e101] [cursor=pointer]:
+            - /url: /terms
+  - button "Chat on WhatsApp" [ref=e102]:
+    - img [ref=e103]
+  - button "Scroll to top":
+    - img
+  - button "Open Next.js Dev Tools" [ref=e110] [cursor=pointer]:
+    - img [ref=e111]
+  - alert [ref=e114]

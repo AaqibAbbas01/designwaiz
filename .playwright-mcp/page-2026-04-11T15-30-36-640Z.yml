@@ -1,0 +1,211 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e4]:
+      - link "DesignWaiz" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: DesignWaiz
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - text: Home
+        - listitem [ref=e10]:
+          - link "Designs" [ref=e11] [cursor=pointer]:
+            - /url: /designs
+            - text: Designs
+        - listitem [ref=e12]:
+          - link "Guides" [ref=e13] [cursor=pointer]:
+            - /url: /guides
+            - text: Guides
+        - listitem [ref=e14]:
+          - link "About Us" [ref=e15] [cursor=pointer]:
+            - /url: /about
+            - text: About Us
+      - link "Book Free Consultation" [ref=e18] [cursor=pointer]:
+        - /url: /#consultation
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e22]:
+        - heading "About DesignWaiz" [level=1] [ref=e23]
+        - paragraph [ref=e24]: We design homes and workspaces that feel refined, practical, and deeply personal — built around the way our clients actually live.
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Our Story" [level=2] [ref=e28]
+          - paragraph [ref=e29]: "DesignWaiz is a premium interior design studio dedicated to transforming spaces into stunning, functional environments. We specialize in residential and commercial interiors across Delhi NCR and pan-India. Our philosophy is simple: understand the client deeply, design with clarity, and deliver with discipline. From modular kitchens and bespoke wardrobes to complete home and office interiors, we bring together design intelligence, strong execution systems, and transparent pricing."
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: 5000+
+            - generic [ref=e33]: Happy Homes
+          - generic [ref=e34]:
+            - generic [ref=e35]: 10+
+            - generic [ref=e36]: Years Experience
+          - generic [ref=e37]:
+            - generic [ref=e38]: 50+
+            - generic [ref=e39]: Expert Designers
+          - generic [ref=e40]:
+            - generic [ref=e41]: 25+
+            - generic [ref=e42]: Cities Served
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - heading "A Decade of Design Excellence" [level=2] [ref=e47]
+          - paragraph [ref=e48]: With over 10 years of experience, DesignWaiz has built a reputation for reliability, creativity, and timely delivery. Our journey has been shaped by a commitment to making world-class interiors accessible to Indian homeowners and businesses.
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: "2016"
+            - paragraph [ref=e52]: Founded in Delhi NCR with a team of 5 designers
+          - generic [ref=e53]:
+            - generic [ref=e54]: "2018"
+            - paragraph [ref=e55]: Expanded to Bangalore and Mumbai
+          - generic [ref=e56]:
+            - generic [ref=e57]: "2020"
+            - paragraph [ref=e58]: Crossed 1000+ completed projects
+          - generic [ref=e59]:
+            - generic [ref=e60]: "2022"
+            - paragraph [ref=e61]: Launched corporate interior design division
+          - generic [ref=e62]:
+            - generic [ref=e63]: "2024"
+            - paragraph [ref=e64]: Introduced AI-powered design visualization
+          - generic [ref=e65]:
+            - generic [ref=e66]: "2026"
+            - paragraph [ref=e67]: Serving 25+ cities with 50+ designers
+      - generic [ref=e69]:
+        - img "Founder portrait" [ref=e71]
+        - generic [ref=e72]:
+          - paragraph [ref=e73]: Meet Our Founder
+          - heading "Sample Founder Name" [level=2] [ref=e74]
+          - paragraph [ref=e75]: Founder & Chief Design Officer
+          - paragraph [ref=e76]: A visionary designer with 15+ years of experience in residential and commercial interiors, blending Indian sensibility with global design trends. Under this leadership, DesignWaiz has grown from a boutique studio into one of India’s most trusted design firms.
+          - generic [ref=e77]:
+            - link "LinkedIn" [ref=e78] [cursor=pointer]:
+              - /url: https://linkedin.com
+            - link "Instagram" [ref=e79] [cursor=pointer]:
+              - /url: https://instagram.com
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - heading "Our Design Team" [level=2] [ref=e83]
+          - paragraph [ref=e84]: A multidisciplinary team of designers, specialists, visualizers, and project leaders behind every DesignWaiz project.
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: AM
+            - heading "Aanya Mehta" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Senior Interior Designer
+          - generic [ref=e90]:
+            - generic [ref=e91]: VS
+            - heading "Vikram Singh" [level=3] [ref=e92]
+            - paragraph [ref=e93]: Project Manager
+          - generic [ref=e94]:
+            - generic [ref=e95]: NK
+            - heading "Neha Kapoor" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Kitchen Specialist
+          - generic [ref=e98]:
+            - generic [ref=e99]: AP
+            - heading "Arjun Patel" [level=3] [ref=e100]
+            - paragraph [ref=e101]: 3D Visualization Expert
+          - generic [ref=e102]:
+            - generic [ref=e103]: SJ
+            - heading "Sakshi Jain" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Corporate Design Lead
+          - generic [ref=e106]:
+            - generic [ref=e107]: RD
+            - heading "Rohan Deshmukh" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Wardrobe & Storage Expert
+          - generic [ref=e110]:
+            - generic [ref=e111]: IR
+            - heading "Ishita Roy" [level=3] [ref=e112]
+            - paragraph [ref=e113]: Colour & Material Consultant
+          - generic [ref=e114]:
+            - generic [ref=e115]: KM
+            - heading "Karan Malhotra" [level=3] [ref=e116]
+            - paragraph [ref=e117]: Client Relations Head
+  - contentinfo [ref=e118]:
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - heading "DesignWaiz" [level=3] [ref=e122]
+          - paragraph [ref=e123]: Transforming spaces into stunning, functional environments. Your dream home is just a consultation away.
+          - generic [ref=e124]:
+            - link "Instagram" [ref=e125] [cursor=pointer]:
+              - /url: https://instagram.com/designwaiz
+              - img [ref=e126]
+            - link "Facebook" [ref=e129] [cursor=pointer]:
+              - /url: https://facebook.com/designwaiz
+              - img [ref=e130]
+            - link "YouTube" [ref=e132] [cursor=pointer]:
+              - /url: https://youtube.com/@designwaiz
+              - img [ref=e133]
+            - link "LinkedIn" [ref=e136] [cursor=pointer]:
+              - /url: https://linkedin.com/company/designwaiz
+              - img [ref=e137]
+        - generic [ref=e141]:
+          - heading "Quick Links" [level=4] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "Home" [ref=e145] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e146]:
+              - link "Designs" [ref=e147] [cursor=pointer]:
+                - /url: /designs
+            - listitem [ref=e148]:
+              - link "Guides" [ref=e149] [cursor=pointer]:
+                - /url: /guides
+            - listitem [ref=e150]:
+              - link "About Us" [ref=e151] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e152]:
+              - link "Contact" [ref=e153] [cursor=pointer]:
+                - /url: /#consultation
+        - generic [ref=e154]:
+          - heading "Design Categories" [level=4] [ref=e155]
+          - list [ref=e156]:
+            - listitem [ref=e157]:
+              - link "Modular Kitchen" [ref=e158] [cursor=pointer]:
+                - /url: /designs?category=modular-kitchen
+            - listitem [ref=e159]:
+              - link "Wardrobe" [ref=e160] [cursor=pointer]:
+                - /url: /designs?category=wardrobe
+            - listitem [ref=e161]:
+              - link "Living Room" [ref=e162] [cursor=pointer]:
+                - /url: /designs?category=living-room
+            - listitem [ref=e163]:
+              - link "Master Bedroom" [ref=e164] [cursor=pointer]:
+                - /url: /designs?category=master-bedroom
+            - listitem [ref=e165]:
+              - link "TV Unit" [ref=e166] [cursor=pointer]:
+                - /url: /designs?category=tv-unit
+            - listitem [ref=e167]:
+              - link "Bathroom" [ref=e168] [cursor=pointer]:
+                - /url: /designs?category=bathroom
+            - listitem [ref=e169]:
+              - link "Corporate Office" [ref=e170] [cursor=pointer]:
+                - /url: /designs?category=corporate-office
+        - generic [ref=e171]:
+          - heading "Contact Us" [level=4] [ref=e172]
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - img [ref=e175]
+              - generic [ref=e178]: Delhi NCR, India
+            - listitem [ref=e179]:
+              - img [ref=e180]
+              - link "+91-99999 99999" [ref=e182] [cursor=pointer]:
+                - /url: tel:+919999999999
+            - listitem [ref=e183]:
+              - img [ref=e184]
+              - link "hello@designwaiz.com" [ref=e187] [cursor=pointer]:
+                - /url: mailto:hello@designwaiz.com
+            - listitem [ref=e188]:
+              - img [ref=e189]
+              - generic [ref=e192]: Mon-Sat, 10 AM - 7 PM
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: © 2026 DesignWaiz. All rights reserved.
+        - generic [ref=e195]:
+          - link "Privacy Policy" [ref=e196] [cursor=pointer]:
+            - /url: /privacy
+          - generic [ref=e197]: "|"
+          - link "Terms of Service" [ref=e198] [cursor=pointer]:
+            - /url: /terms
+  - button "Chat on WhatsApp" [ref=e199]:
+    - img [ref=e200]
+  - button "Scroll to top":
+    - img
+  - button "Open Next.js Dev Tools" [ref=e207] [cursor=pointer]:
+    - img [ref=e208]

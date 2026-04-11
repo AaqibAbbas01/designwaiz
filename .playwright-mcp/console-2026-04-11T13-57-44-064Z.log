@@ -1,0 +1,117 @@
+[    2020ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/:0
+[    2105ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0bruynb._.js:15305
+[    2171ms] Error: ./src/app/globals.css:1429:8
+Parsing CSS source code failed
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Generated code of PostCSS transform of file content of src/app/globals.css:
+./src/app/globals.css:1429:8
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/app/globals.css:1429:8)
+    at <unknown> (./src/app/globals.css:1429:8)
+    at Object.getCompilationErrors (file:///Users/aaqibabbas/Desktop/designwaiz/node_modules/next/dist/server/dev/hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file:///Users/aaqibabbas/Desktop/designwaiz/node_modules/next/dist/server/lib/dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file:///Users/aaqibabbas/Desktop/designwaiz/node_modules/next/dist/server/dev/next-dev-server.js:719:42)
+    at DevServer.findPageComponents (file:///Users/aaqibabbas/Desktop/designwaiz/node_modules/next/dist/server/dev/next-dev-server.js:689:43)
+    at async DevServer.renderErrorToResponseImpl (file:///Users/aaqibabbas/Desktop/designwaiz/node_modules/next/dist/server/base-server.js:1745:26)
+[    2176ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[    2239ms] [ERROR] ./src/app/globals.css:1429:8
+Parsing CSS source code failed
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Generated code of PostCSS transform of file content of src/app/globals.css:
+./src/app/globals.css:1429:8
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[    2290ms] [ERROR] ./src/app/globals.css:1429:8
+Parsing CSS source code failed
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Generated code of PostCSS transform of file content of src/app/globals.css:
+./src/app/globals.css:1429:8
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945
+[    2351ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1226
+[    2533ms] [ERROR] ./src/app/globals.css:1429:8
+Parsing CSS source code failed
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Generated code of PostCSS transform of file content of src/app/globals.css:
+./src/app/globals.css:1429:8
+  1427 |   }
+  1428 | }
+> 1429 | @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,...
+       |        ^
+  1430 | *, *::before, *::after {
+  1431 |   box-sizing: border-box;
+  1432 | }
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_0u_w_5s._.js:1945

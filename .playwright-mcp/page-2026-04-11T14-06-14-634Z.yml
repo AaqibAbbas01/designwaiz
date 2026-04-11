@@ -1,0 +1,568 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e4]:
+      - link "DesignWaiz" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: DesignWaiz
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Home" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - text: Home
+        - listitem [ref=e11]:
+          - link "Designs" [ref=e12] [cursor=pointer]:
+            - /url: /designs
+            - text: Designs
+        - listitem [ref=e13]:
+          - link "Guides" [ref=e14] [cursor=pointer]:
+            - /url: /guides
+            - text: Guides
+        - listitem [ref=e15]:
+          - link "About Us" [ref=e16] [cursor=pointer]:
+            - /url: /about
+            - text: About Us
+      - link "Book Free Consultation" [ref=e18] [cursor=pointer]:
+        - /url: /#consultation
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - img "Beautiful Interiors, Crafted For You" [ref=e22]
+        - generic [ref=e26]:
+          - heading "Beautiful Interiors, Crafted For You" [level=1] [ref=e27]
+          - paragraph [ref=e28]: Transform your space with India's most trusted interior design studio.
+          - button "Explore Our Work" [ref=e29]
+      - generic [ref=e30]:
+        - img "Dream Kitchens, Designed To Perfection" [ref=e31]
+        - generic [ref=e35]:
+          - heading "Dream Kitchens, Designed To Perfection" [level=1] [ref=e36]
+          - paragraph [ref=e37]: From L-shape to Island — every kitchen tells a story.
+          - button "View Kitchen Designs" [ref=e38]
+      - generic [ref=e39]:
+        - img "Complete Home Interiors, One Partner" [ref=e40]
+        - generic [ref=e44]:
+          - heading "Complete Home Interiors, One Partner" [level=1] [ref=e45]
+          - paragraph [ref=e46]: End-to-end interior solutions for your dream flat.
+          - button "Explore All Designs" [ref=e47]
+      - generic [ref=e48]:
+        - img "Workspaces That Inspire Productivity" [ref=e49]
+        - generic [ref=e53]:
+          - heading "Workspaces That Inspire Productivity" [level=1] [ref=e54]
+          - paragraph [ref=e55]: Corporate interiors designed for the modern enterprise.
+          - button "Corporate Solutions" [ref=e56]
+      - button "Previous slide" [ref=e57]:
+        - img [ref=e58]
+      - button "Next slide" [ref=e60]:
+        - img [ref=e61]
+      - generic [ref=e63]:
+        - button "Go to slide 1" [ref=e64]
+        - button "Go to slide 2" [ref=e65]
+        - button "Go to slide 3" [ref=e66]
+        - button "Go to slide 4" [ref=e67]
+    - generic [ref=e70]:
+      - generic [ref=e71]:
+        - img [ref=e73]
+        - heading "Quality Work" [level=3] [ref=e75]
+        - paragraph [ref=e76]: Every project undergoes rigorous quality checks using premium-grade materials and expert craftsmanship.
+      - generic [ref=e77]:
+        - img [ref=e79]
+        - heading "Punctuality" [level=3] [ref=e82]
+        - paragraph [ref=e83]: We honour timelines like promises — your project is delivered on schedule, every single time.
+      - generic [ref=e84]:
+        - img [ref=e86]
+        - heading "Value For Money" [level=3] [ref=e89]
+        - paragraph [ref=e90]: Luxury interiors at competitive prices — because great design shouldn't cost a fortune.
+      - generic [ref=e91]:
+        - img [ref=e93]
+        - heading "Durability" [level=3] [ref=e97]
+        - paragraph [ref=e98]: Built to last a decade and beyond — our interiors stand the test of time and daily use.
+    - generic [ref=e101]:
+      - generic [ref=e102] [cursor=pointer]:
+        - img "Interior walkthrough video" [ref=e103]
+        - img [ref=e106]
+      - generic [ref=e108]:
+        - heading "See Our Work Come Alive" [level=2] [ref=e109]
+        - paragraph [ref=e110]: Take a virtual tour of our recently completed projects. From concept sketches to stunning reality — watch how DesignWaiz transforms empty spaces into dream homes.
+        - link "Watch More Projects" [ref=e111] [cursor=pointer]:
+          - /url: /designs
+          - text: Watch More Projects
+          - img [ref=e112]
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - heading "Design Ideas for Every Space" [level=2] [ref=e117]
+        - paragraph [ref=e118]: Because every corner holds a unique design potential.
+      - generic [ref=e119]:
+        - link "Modular Kitchen Explore Modular Kitchen 45 designs" [ref=e120] [cursor=pointer]:
+          - /url: /designs?category=modular-kitchen
+          - generic [ref=e121]:
+            - img "Modular Kitchen" [ref=e122]
+            - generic [ref=e124]:
+              - text: Explore
+              - img [ref=e125]
+          - generic [ref=e127]:
+            - heading "Modular Kitchen" [level=3] [ref=e128]
+            - paragraph [ref=e129]: 45 designs
+        - link "Wardrobe Explore Wardrobe 48 designs" [ref=e130] [cursor=pointer]:
+          - /url: /designs?category=wardrobe
+          - generic [ref=e131]:
+            - img "Wardrobe" [ref=e132]
+            - generic [ref=e134]:
+              - text: Explore
+              - img [ref=e135]
+          - generic [ref=e137]:
+            - heading "Wardrobe" [level=3] [ref=e138]
+            - paragraph [ref=e139]: 48 designs
+        - link "Living Room Explore Living Room 12 designs" [ref=e140] [cursor=pointer]:
+          - /url: /designs?category=living-room
+          - generic [ref=e141]:
+            - img "Living Room" [ref=e142]
+            - generic [ref=e144]:
+              - text: Explore
+              - img [ref=e145]
+          - generic [ref=e147]:
+            - heading "Living Room" [level=3] [ref=e148]
+            - paragraph [ref=e149]: 12 designs
+        - link "Master Bedroom Explore Master Bedroom 12 designs" [ref=e150] [cursor=pointer]:
+          - /url: /designs?category=master-bedroom
+          - generic [ref=e151]:
+            - img "Master Bedroom" [ref=e152]
+            - generic [ref=e154]:
+              - text: Explore
+              - img [ref=e155]
+          - generic [ref=e157]:
+            - heading "Master Bedroom" [level=3] [ref=e158]
+            - paragraph [ref=e159]: 12 designs
+        - link "Kids Room Explore Kids Room 12 designs" [ref=e160] [cursor=pointer]:
+          - /url: /designs?category=kids-room
+          - generic [ref=e161]:
+            - img "Kids Room" [ref=e162]
+            - generic [ref=e164]:
+              - text: Explore
+              - img [ref=e165]
+          - generic [ref=e167]:
+            - heading "Kids Room" [level=3] [ref=e168]
+            - paragraph [ref=e169]: 12 designs
+        - link "Balcony Explore Balcony 12 designs" [ref=e170] [cursor=pointer]:
+          - /url: /designs?category=balcony
+          - generic [ref=e171]:
+            - img "Balcony" [ref=e172]
+            - generic [ref=e174]:
+              - text: Explore
+              - img [ref=e175]
+          - generic [ref=e177]:
+            - heading "Balcony" [level=3] [ref=e178]
+            - paragraph [ref=e179]: 12 designs
+        - link "TV Unit Explore TV Unit 12 designs" [ref=e180] [cursor=pointer]:
+          - /url: /designs?category=tv-unit
+          - generic [ref=e181]:
+            - img "TV Unit" [ref=e182]
+            - generic [ref=e184]:
+              - text: Explore
+              - img [ref=e185]
+          - generic [ref=e187]:
+            - heading "TV Unit" [level=3] [ref=e188]
+            - paragraph [ref=e189]: 12 designs
+        - link "Bathroom Explore Bathroom 12 designs" [ref=e190] [cursor=pointer]:
+          - /url: /designs?category=bathroom
+          - generic [ref=e191]:
+            - img "Bathroom" [ref=e192]
+            - generic [ref=e194]:
+              - text: Explore
+              - img [ref=e195]
+          - generic [ref=e197]:
+            - heading "Bathroom" [level=3] [ref=e198]
+            - paragraph [ref=e199]: 12 designs
+        - link "Mandir Explore Mandir 12 designs" [ref=e200] [cursor=pointer]:
+          - /url: /designs?category=mandir
+          - generic [ref=e201]:
+            - img "Mandir" [ref=e202]
+            - generic [ref=e204]:
+              - text: Explore
+              - img [ref=e205]
+          - generic [ref=e207]:
+            - heading "Mandir" [level=3] [ref=e208]
+            - paragraph [ref=e209]: 12 designs
+        - link "Dining Room Explore Dining Room 12 designs" [ref=e210] [cursor=pointer]:
+          - /url: /designs?category=dining-room
+          - generic [ref=e211]:
+            - img "Dining Room" [ref=e212]
+            - generic [ref=e214]:
+              - text: Explore
+              - img [ref=e215]
+          - generic [ref=e217]:
+            - heading "Dining Room" [level=3] [ref=e218]
+            - paragraph [ref=e219]: 12 designs
+        - link "Wall Design Explore Wall Design 12 designs" [ref=e220] [cursor=pointer]:
+          - /url: /designs?category=wall-design
+          - generic [ref=e221]:
+            - img "Wall Design" [ref=e222]
+            - generic [ref=e224]:
+              - text: Explore
+              - img [ref=e225]
+          - generic [ref=e227]:
+            - heading "Wall Design" [level=3] [ref=e228]
+            - paragraph [ref=e229]: 12 designs
+        - link "Door Design Explore Door Design 12 designs" [ref=e230] [cursor=pointer]:
+          - /url: /designs?category=door-design
+          - generic [ref=e231]:
+            - img "Door Design" [ref=e232]
+            - generic [ref=e234]:
+              - text: Explore
+              - img [ref=e235]
+          - generic [ref=e237]:
+            - heading "Door Design" [level=3] [ref=e238]
+            - paragraph [ref=e239]: 12 designs
+        - link "Crockery Unit Explore Crockery Unit 12 designs" [ref=e240] [cursor=pointer]:
+          - /url: /designs?category=crockery-unit
+          - generic [ref=e241]:
+            - img "Crockery Unit" [ref=e242]
+            - generic [ref=e244]:
+              - text: Explore
+              - img [ref=e245]
+          - generic [ref=e247]:
+            - heading "Crockery Unit" [level=3] [ref=e248]
+            - paragraph [ref=e249]: 12 designs
+        - link "Study Room Explore Study Room 12 designs" [ref=e250] [cursor=pointer]:
+          - /url: /designs?category=study-room
+          - generic [ref=e251]:
+            - img "Study Room" [ref=e252]
+            - generic [ref=e254]:
+              - text: Explore
+              - img [ref=e255]
+          - generic [ref=e257]:
+            - heading "Study Room" [level=3] [ref=e258]
+            - paragraph [ref=e259]: 12 designs
+        - link "Corporate Office Explore Corporate Office 12 designs" [ref=e260] [cursor=pointer]:
+          - /url: /designs?category=corporate-office
+          - generic [ref=e261]:
+            - img "Corporate Office" [ref=e262]
+            - generic [ref=e264]:
+              - text: Explore
+              - img [ref=e265]
+          - generic [ref=e267]:
+            - heading "Corporate Office" [level=3] [ref=e268]
+            - paragraph [ref=e269]: 12 designs
+    - generic [ref=e272]:
+      - generic [ref=e278]:
+        - generic "Ideal for living room & home office" [ref=e279] [cursor=pointer]:
+          - generic [ref=e280]:
+            - generic [ref=e281]: "N"
+            - generic [ref=e282]: North
+        - generic "Best for pooja room & meditation" [ref=e283] [cursor=pointer]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: NE
+            - generic [ref=e286]: North-East
+        - generic "Perfect for main entrance" [ref=e287] [cursor=pointer]:
+          - generic [ref=e288]:
+            - generic [ref=e289]: E
+            - generic [ref=e290]: East
+        - generic "Ideal kitchen placement" [ref=e291] [cursor=pointer]:
+          - generic [ref=e292]:
+            - generic [ref=e293]: SE
+            - generic [ref=e294]: South-East
+        - generic "Good for master bedroom" [ref=e295] [cursor=pointer]:
+          - generic [ref=e296]:
+            - generic [ref=e297]: S
+            - generic [ref=e298]: South
+        - generic "Best for master bedroom" [ref=e299] [cursor=pointer]:
+          - generic [ref=e300]:
+            - generic [ref=e301]: SW
+            - generic [ref=e302]: South-West
+        - generic "Suitable for dining room" [ref=e303] [cursor=pointer]:
+          - generic [ref=e304]:
+            - generic [ref=e305]: W
+            - generic [ref=e306]: West
+        - generic "Ideal for guest room" [ref=e307] [cursor=pointer]:
+          - generic [ref=e308]:
+            - generic [ref=e309]: NW
+            - generic [ref=e310]: North-West
+      - generic [ref=e311]:
+        - heading "Check Your Vastu" [level=2] [ref=e312]
+        - paragraph [ref=e313]: Align your home with ancient wisdom for positive energy and harmony.
+        - list [ref=e314]:
+          - listitem [ref=e315]:
+            - img [ref=e316]
+            - generic [ref=e318]: Room-by-room Vastu analysis
+          - listitem [ref=e319]:
+            - img [ref=e320]
+            - generic [ref=e322]: Direction-based recommendations
+          - listitem [ref=e323]:
+            - img [ref=e324]
+            - generic [ref=e326]: Remedies for Vastu dosh
+          - listitem [ref=e327]:
+            - img [ref=e328]
+            - generic [ref=e330]: Free Vastu consultation with every project
+        - button "Get Free Vastu Consultation" [ref=e331]
+    - generic [ref=e334]:
+      - generic [ref=e335]:
+        - heading "Free 1-To-1 Video Consultation With Top Designers" [level=2] [ref=e336]
+        - paragraph [ref=e337]: Speak one-on-one with certified designers and start planning your dream home today.
+        - generic [ref=e338]:
+          - generic [ref=e339]:
+            - img [ref=e340]
+            - generic [ref=e342]: Free
+          - generic [ref=e343]:
+            - img [ref=e344]
+            - generic [ref=e346]: No Obligation
+          - generic [ref=e347]:
+            - img [ref=e348]
+            - generic [ref=e350]: Expert Designers
+      - generic [ref=e352]:
+        - textbox "Your Name" [ref=e353]
+        - textbox "Phone Number" [ref=e354]
+        - textbox "City" [ref=e355]
+        - combobox [ref=e356]:
+          - option "Property Type" [disabled] [selected]
+          - option "1 BHK"
+          - option "2 BHK"
+          - option "3 BHK"
+          - option "4+ BHK"
+          - option "Villa"
+          - option "Office"
+        - button "Book Free Consultation" [ref=e357]
+    - generic [ref=e359]:
+      - generic [ref=e360]:
+        - heading "Why Choose Us" [level=2] [ref=e361]
+        - paragraph [ref=e362]: With us, you experience the power of ideas, design and craftsmanship come alive.
+        - button "Book Consultation" [ref=e363]
+      - generic [ref=e364]:
+        - generic [ref=e365]:
+          - img [ref=e367]
+          - heading "Made To Order" [level=3] [ref=e371]
+          - paragraph [ref=e372]: We create personalised spaces that cater to your every requirement.
+        - generic [ref=e373]:
+          - img [ref=e375]
+          - heading "Lowest Prices Guaranteed" [level=3] [ref=e378]
+          - paragraph [ref=e379]: We provide the best possible solutions that suit your finances.
+        - generic [ref=e380]:
+          - img [ref=e382]
+          - heading "Quality Checks At Every Step" [level=3] [ref=e386]
+          - paragraph [ref=e387]: We guarantee thorough quality checks till project completion.
+        - generic [ref=e388]:
+          - img [ref=e390]
+          - heading "Timely Delivery Assurance" [level=3] [ref=e395]
+          - paragraph [ref=e396]: We proactively work on commitments to maintain our benchmark of on-time delivery.
+        - generic [ref=e397]:
+          - img [ref=e399]
+          - heading "11-Year Warranty" [level=3] [ref=e401]
+          - paragraph [ref=e402]: We invigorate client relationships by offering warranties that last a decade.
+    - generic [ref=e404]:
+      - heading "What Google Says About Us" [level=2] [ref=e405]
+      - generic [ref=e407]:
+        - generic [ref=e408]: "4.8"
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - img [ref=e411]
+            - img [ref=e413]
+            - img [ref=e415]
+            - img [ref=e417]
+            - img [ref=e419]
+          - paragraph [ref=e421]: Based on 520 reviews
+      - generic [ref=e422]:
+        - generic [ref=e423]:
+          - generic [ref=e424]:
+            - generic [ref=e425]: PS
+            - generic [ref=e426]:
+              - generic [ref=e427]: Priya Sharma
+              - generic [ref=e428]:
+                - img [ref=e429]
+                - img [ref=e431]
+                - img [ref=e433]
+                - img [ref=e435]
+                - img [ref=e437]
+          - paragraph [ref=e439]: "\"Absolutely loved the modular kitchen design. The team was professional and delivered on time. Highly recommended!\""
+          - paragraph [ref=e440]: 2 weeks ago
+        - generic [ref=e441]:
+          - generic [ref=e442]:
+            - generic [ref=e443]: RK
+            - generic [ref=e444]:
+              - generic [ref=e445]: Rajesh Kumar
+              - generic [ref=e446]:
+                - img [ref=e447]
+                - img [ref=e449]
+                - img [ref=e451]
+                - img [ref=e453]
+                - img [ref=e455]
+          - paragraph [ref=e457]: "\"DesignWaiz transformed our 3BHK into a dream home. The wardrobe designs are stunning and the quality is top-notch.\""
+          - paragraph [ref=e458]: 1 month ago
+        - generic [ref=e459]:
+          - generic [ref=e460]:
+            - generic [ref=e461]: AV
+            - generic [ref=e462]:
+              - generic [ref=e463]: Anita Verma
+              - generic [ref=e464]:
+                - img [ref=e465]
+                - img [ref=e467]
+                - img [ref=e469]
+                - img [ref=e471]
+                - img [ref=e473]
+          - paragraph [ref=e475]: "\"Great value for money. The team understood our requirements perfectly and the final result exceeded expectations.\""
+          - paragraph [ref=e476]: 3 weeks ago
+        - generic [ref=e477]:
+          - generic [ref=e478]:
+            - generic [ref=e479]: MI
+            - generic [ref=e480]:
+              - generic [ref=e481]: Mohammed Irfan
+              - generic [ref=e482]:
+                - img [ref=e483]
+                - img [ref=e485]
+                - img [ref=e487]
+                - img [ref=e489]
+                - img [ref=e491]
+          - paragraph [ref=e493]: "\"Professional team, good designs, and reasonable pricing. The corporate office interior they did for us looks fantastic.\""
+          - paragraph [ref=e494]: 1 month ago
+    - generic [ref=e496]:
+      - generic [ref=e497]:
+        - heading "Real Stories, Bona Fide Impact" [level=2] [ref=e498]
+        - paragraph [ref=e499]: We deliver what we promise. Here's what our clients have to say…
+      - generic [ref=e500]:
+        - generic [ref=e501] [cursor=pointer]:
+          - generic [ref=e502]:
+            - img "The Sharma Family" [ref=e503]
+            - img [ref=e506]
+          - heading "The Sharma Family" [level=3] [ref=e508]
+          - paragraph [ref=e509]: 3 BHK, Noida
+          - paragraph [ref=e510]: "\"They turned our empty flat into a masterpiece...\""
+        - generic [ref=e511] [cursor=pointer]:
+          - generic [ref=e512]:
+            - img "Mr. & Mrs. Gupta" [ref=e513]
+            - img [ref=e516]
+          - heading "Mr. & Mrs. Gupta" [level=3] [ref=e518]
+          - paragraph [ref=e519]: Villa, Gurgaon
+          - paragraph [ref=e520]: "\"Professional team, stunning results...\""
+        - generic [ref=e521] [cursor=pointer]:
+          - generic [ref=e522]:
+            - img "TechNova Pvt Ltd" [ref=e523]
+            - img [ref=e526]
+          - heading "TechNova Pvt Ltd" [level=3] [ref=e528]
+          - paragraph [ref=e529]: Corporate Office, Delhi
+          - paragraph [ref=e530]: "\"Our workspace productivity improved 40%...\""
+    - generic [ref=e532]:
+      - generic [ref=e533]:
+        - heading "Our Brand Partners" [level=2] [ref=e534]
+        - paragraph [ref=e535]: An elite list of partners who strengthen our brand promise.
+      - generic [ref=e537]:
+        - generic [ref=e540]: Century Plyboards
+        - generic [ref=e543]: Greenlam Industries
+        - generic [ref=e546]: Jaguar
+        - generic [ref=e549]: ICE
+        - generic [ref=e552]: Sitka
+        - generic [ref=e555]: Hettich
+        - generic [ref=e558]: Hafele
+        - generic [ref=e561]: Ebco
+        - generic [ref=e564]: Asian Paints
+        - generic [ref=e567]: Berger Paints
+        - generic [ref=e570]: Century Plyboards
+        - generic [ref=e573]: Greenlam Industries
+        - generic [ref=e576]: Jaguar
+        - generic [ref=e579]: ICE
+        - generic [ref=e582]: Sitka
+        - generic [ref=e585]: Hettich
+        - generic [ref=e588]: Hafele
+        - generic [ref=e591]: Ebco
+        - generic [ref=e594]: Asian Paints
+        - generic [ref=e597]: Berger Paints
+    - generic [ref=e600]:
+      - generic [ref=e601]:
+        - heading "Beautiful Interiors" [level=2] [ref=e602]
+        - paragraph [ref=e603]: At The Best Price
+        - paragraph [ref=e604]: Your dream home is just a consultation away. Get personalized interior design solutions from India's most trusted design studio.
+        - generic [ref=e605]:
+          - textbox "Your Name" [ref=e606]
+          - textbox "Phone Number" [ref=e607]
+          - textbox "Email Address" [ref=e608]
+          - button "Get Free Quote" [ref=e609]
+          - paragraph [ref=e610]: ✓ Trusted by 5000+ happy homeowners across India
+      - img "Beautiful living room interior" [ref=e612]
+  - contentinfo [ref=e613]:
+    - generic [ref=e614]:
+      - generic [ref=e615]:
+        - generic [ref=e616]:
+          - heading "DesignWaiz" [level=3] [ref=e617]
+          - paragraph [ref=e618]: Transforming spaces into stunning, functional environments. Your dream home is just a consultation away.
+          - generic [ref=e619]:
+            - link "Instagram" [ref=e620] [cursor=pointer]:
+              - /url: https://instagram.com/designwaiz
+              - img [ref=e621]
+            - link "Facebook" [ref=e624] [cursor=pointer]:
+              - /url: https://facebook.com/designwaiz
+              - img [ref=e625]
+            - link "YouTube" [ref=e627] [cursor=pointer]:
+              - /url: https://youtube.com/@designwaiz
+              - img [ref=e628]
+            - link "LinkedIn" [ref=e631] [cursor=pointer]:
+              - /url: https://linkedin.com/company/designwaiz
+              - img [ref=e632]
+        - generic [ref=e636]:
+          - heading "Quick Links" [level=4] [ref=e637]
+          - list [ref=e638]:
+            - listitem [ref=e639]:
+              - link "Home" [ref=e640] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e641]:
+              - link "Designs" [ref=e642] [cursor=pointer]:
+                - /url: /designs
+            - listitem [ref=e643]:
+              - link "Guides" [ref=e644] [cursor=pointer]:
+                - /url: /guides
+            - listitem [ref=e645]:
+              - link "About Us" [ref=e646] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e647]:
+              - link "Contact" [ref=e648] [cursor=pointer]:
+                - /url: /#consultation
+        - generic [ref=e649]:
+          - heading "Design Categories" [level=4] [ref=e650]
+          - list [ref=e651]:
+            - listitem [ref=e652]:
+              - link "Modular Kitchen" [ref=e653] [cursor=pointer]:
+                - /url: /designs?category=modular-kitchen
+            - listitem [ref=e654]:
+              - link "Wardrobe" [ref=e655] [cursor=pointer]:
+                - /url: /designs?category=wardrobe
+            - listitem [ref=e656]:
+              - link "Living Room" [ref=e657] [cursor=pointer]:
+                - /url: /designs?category=living-room
+            - listitem [ref=e658]:
+              - link "Master Bedroom" [ref=e659] [cursor=pointer]:
+                - /url: /designs?category=master-bedroom
+            - listitem [ref=e660]:
+              - link "TV Unit" [ref=e661] [cursor=pointer]:
+                - /url: /designs?category=tv-unit
+            - listitem [ref=e662]:
+              - link "Bathroom" [ref=e663] [cursor=pointer]:
+                - /url: /designs?category=bathroom
+            - listitem [ref=e664]:
+              - link "Corporate Office" [ref=e665] [cursor=pointer]:
+                - /url: /designs?category=corporate-office
+        - generic [ref=e666]:
+          - heading "Contact Us" [level=4] [ref=e667]
+          - list [ref=e668]:
+            - listitem [ref=e669]:
+              - img [ref=e670]
+              - generic [ref=e673]: Delhi NCR, India
+            - listitem [ref=e674]:
+              - img [ref=e675]
+              - link "+91-99999 99999" [ref=e677] [cursor=pointer]:
+                - /url: tel:+919999999999
+            - listitem [ref=e678]:
+              - img [ref=e679]
+              - link "hello@designwaiz.com" [ref=e682] [cursor=pointer]:
+                - /url: mailto:hello@designwaiz.com
+            - listitem [ref=e683]:
+              - img [ref=e684]
+              - generic [ref=e687]: Mon-Sat, 10 AM - 7 PM
+      - generic [ref=e688]:
+        - paragraph [ref=e689]: © 2026 DesignWaiz. All rights reserved.
+        - generic [ref=e690]:
+          - link "Privacy Policy" [ref=e691] [cursor=pointer]:
+            - /url: /privacy
+          - generic [ref=e692]: "|"
+          - link "Terms of Service" [ref=e693] [cursor=pointer]:
+            - /url: /terms
+  - button "Chat on WhatsApp" [ref=e694]:
+    - img [ref=e695]
+  - button "Scroll to top":
+    - img
+  - button "Open Next.js Dev Tools" [ref=e702] [cursor=pointer]:
+    - img [ref=e703]
+  - alert [ref=e706]
