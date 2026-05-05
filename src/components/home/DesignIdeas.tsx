@@ -7,9 +7,9 @@ export default function DesignIdeas() {
     <section id="design-ideas" className="section-padding bg-white">
       <div className="container-dw">
         <div className="text-center mb-12">
-          <h2 className="text-h2 mb-3">Design Ideas for Every Space</h2>
+          <h2 className="text-h2 mb-3">Explore Our Spaces</h2>
           <p className="text-lg text-dw-text-secondary max-w-2xl mx-auto">
-            Because every corner holds a unique design potential.
+            Curated interiors, modular solutions, and refined details for modern homes.
           </p>
         </div>
 

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -56,6 +57,7 @@ const SLIDES: Slide[] = [
 ];
 
 export default function HeroCarousel() {
+  const router = useRouter();
   const [current, setCurrent] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -73,7 +75,7 @@ export default function HeroCarousel() {
     if (slide.ctaAction === "scroll" && slide.ctaTarget) {
       document.querySelector(slide.ctaTarget)?.scrollIntoView({ behavior: "smooth" });
     } else if (slide.ctaAction === "navigate" && slide.ctaTarget) {
-      window.location.href = slide.ctaTarget;
+      router.push(slide.ctaTarget);
     } else if (slide.ctaAction === "modal") {
       setModalOpen(true);
     }
@@ -97,19 +99,22 @@ export default function HeroCarousel() {
               quality={90}
             />
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/10" />
 
             {/* Content */}
             <div className="absolute inset-0 flex items-center">
               <div className="container-dw">
                 <div className="max-w-2xl text-white">
-                  <h1 className="text-h1 mb-4">{slide.headline}</h1>
-                  <p className="text-lg md:text-xl mb-8 text-white/90 max-w-xl">
+                  <p className="text-xs font-semibold uppercase text-dw-mustard mb-4">
+                    Design Waiz Interiors
+                  </p>
+                  <h1 className="text-h1 mb-5">{slide.headline}</h1>
+                  <p className="text-base md:text-lg mb-8 text-white/85 max-w-xl leading-8">
                     {slide.subtext}
                   </p>
                   <button
                     onClick={() => handleCTA(slide)}
-                    className="bg-dw-mustard hover:bg-dw-olive text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                    className="bg-dw-mustard hover:bg-white hover:text-dw-dark text-white font-semibold px-7 py-3 rounded-lg transition-all duration-300"
                   >
                     {slide.cta}
                   </button>
@@ -169,7 +174,7 @@ export default function HeroCarousel() {
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-2xl p-8 max-w-4xl w-full max-h-[80vh] overflow-y-auto"
+              className="bg-white rounded-lg p-8 max-w-4xl w-full max-h-[80vh] overflow-y-auto border border-dw-border"
             >
               <h2 className="text-h2 mb-2 text-center">Choose Your Space</h2>
               <p className="text-center text-dw-text-secondary mb-8">
@@ -180,9 +185,9 @@ export default function HeroCarousel() {
                   <a
                     key={cat.id}
                     href={`/designs?category=${cat.slug}`}
-                    className="group card-base p-5 text-center hover:border-2 hover:border-dw-mustard"
+                    className="group card-base p-5 text-center"
                   >
-                    <div className="w-12 h-12 mx-auto mb-3 bg-dw-mustard/10 rounded-full flex items-center justify-center text-dw-mustard group-hover:bg-dw-mustard group-hover:text-white transition-colors">
+                    <div className="w-12 h-12 mx-auto mb-3 bg-dw-mustard/10 rounded-lg flex items-center justify-center text-dw-mustard group-hover:bg-dw-mustard group-hover:text-white transition-colors">
                       <span className="text-2xl font-heading font-bold">
                         {cat.name.charAt(0)}
                       </span>
@@ -198,7 +203,7 @@ export default function HeroCarousel() {
               </div>
               <button
                 onClick={() => setModalOpen(false)}
-                className="mt-8 w-full bg-dw-text-secondary text-white py-3 rounded-full hover:bg-dw-dark transition-colors"
+                className="mt-8 w-full bg-dw-dark text-white py-3 rounded-lg hover:bg-dw-mustard transition-colors"
               >
                 Close
               </button>

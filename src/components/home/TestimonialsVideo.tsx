@@ -28,14 +28,14 @@ export default function TestimonialsVideo() {
         <div className="text-center mb-12">
           <h2 className="text-h2 mb-3">Real Stories, Bona Fide Impact</h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            We deliver what we promise. Here's what our clients have to say…
+            We deliver what we promise. Here&apos;s what our clients have to say...
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {TESTIMONIALS.map((testimonial, idx) => (
             <div key={idx} className="group cursor-pointer">
-              <div className="relative aspect-video rounded-xl overflow-hidden mb-4">
+              <div className="relative aspect-video rounded-lg overflow-hidden mb-4 border border-white/10">
                 <Image
                   src={testimonial.thumbnail}
                   alt={testimonial.client}
@@ -54,7 +54,7 @@ export default function TestimonialsVideo() {
 
               <h3 className="font-heading font-semibold text-lg mb-1">{testimonial.client}</h3>
               <p className="text-dw-mustard text-sm mb-2">{testimonial.project}</p>
-              <p className="text-white/70 text-sm italic">"{testimonial.quote}"</p>
+              <p className="text-white/70 text-sm italic">&ldquo;{testimonial.quote}&rdquo;</p>
             </div>
           ))}
         </div>

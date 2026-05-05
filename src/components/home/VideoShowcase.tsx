@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function VideoShowcase() {
   return (
-    <section className="section-padding bg-[#EDEAE5]">
+    <section className="section-padding bg-dw-bg-secondary">
       <div className="container-dw">
         <div className="grid lg:grid-cols-[2fr_1fr] gap-10 items-center">
           {/* Video */}
-          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
+          <div className="relative aspect-video rounded-lg overflow-hidden shadow-sm border border-dw-border group cursor-pointer">
             <Image
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=675&fit=crop"
               alt="Interior walkthrough video"
@@ -24,9 +24,12 @@ export default function VideoShowcase() {
 
           {/* Description */}
           <div>
+            <p className="text-xs font-semibold uppercase text-dw-mustard mb-3">
+              Studio Portfolio
+            </p>
             <h2 className="text-h2 mb-4">See Our Work Come Alive</h2>
             <p className="text-dw-text-secondary leading-relaxed mb-6">
-              Take a virtual tour of our recently completed projects. From concept sketches to stunning reality — watch how DesignWaiz transforms empty spaces into dream homes.
+              Explore completed spaces, material palettes, and execution details through our project videos.
             </p>
             <a href="/designs" className="inline-flex items-center gap-2 text-dw-mustard font-semibold hover:gap-3 transition-all">
               Watch More Projects

@@ -29,7 +29,9 @@ const DESIGN_CATEGORIES = [
   { label: "Living Room", href: "/designs?category=living-room" },
   { label: "Master Bedroom", href: "/designs?category=master-bedroom" },
   { label: "TV Unit", href: "/designs?category=tv-unit" },
-  { label: "Bathroom", href: "/designs?category=bathroom" },
+  { label: "Wall Art", href: "/designs?category=wall-art" },
+  { label: "Facade", href: "/designs?category=facade" },
+  { label: "Modular", href: "/designs?category=modular" },
   { label: "Corporate Office", href: "/designs?category=corporate-office" },
 ];
 

@@ -37,12 +37,9 @@ export default function WhyChooseUs() {
           <p className="text-lg text-dw-text-secondary max-w-2xl mx-auto mb-6">
             With us, you experience the power of ideas, design and craftsmanship come alive.
           </p>
-          <button className="border-2 border-dw-mustard text-dw-mustard hover:bg-dw-mustard hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300">
-            Book Consultation
-          </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {FEATURES.map((feature, idx) => {
             const Icon = feature.icon;
             return (
@@ -50,7 +47,7 @@ export default function WhyChooseUs() {
                 key={idx}
                 className="card-base p-6 text-center"
               >
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-dw-olive/10 mb-4">
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-dw-olive/10 mb-4">
                   <Icon className="text-dw-olive" size={28} />
                 </div>
                 <h3 className="font-heading font-semibold text-base mb-2 text-dw-text-primary">

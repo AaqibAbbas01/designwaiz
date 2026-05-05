@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, Suspense } from "react";
+import { useState, useCallback, Suspense } from "react";
 import Image from "next/image";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Search, X } from "lucide-react";
@@ -19,12 +19,12 @@ function DesignsContent() {
   const categoryParam = searchParams.get("category") || "all";
   const subcategoryParam = searchParams.get("sub") || "all";
 
-  const [activeCategory, setActiveCategory] = useState(categoryParam);
-  const [activeSubcategory, setActiveSubcategory] = useState(subcategoryParam);
   const [displayCount, setDisplayCount] = useState(ITEMS_PER_PAGE);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
+  const activeCategory = categoryParam;
+  const activeSubcategory = subcategoryParam;
   const activeCategoryData = DESIGN_CATEGORIES.find((c) => c.slug === activeCategory);
 
   const filteredImages = ALL_DESIGN_IMAGES.filter((img) => {
@@ -48,14 +48,11 @@ function DesignsContent() {
   );
 
   const handleCategoryChange = (slug: string) => {
-    setActiveCategory(slug);
-    setActiveSubcategory("all");
     setDisplayCount(ITEMS_PER_PAGE);
     updateURL(slug, "all");
   };
 
   const handleSubcategoryChange = (slug: string) => {
-    setActiveSubcategory(slug);
     setDisplayCount(ITEMS_PER_PAGE);
     updateURL(activeCategory, slug);
   };
@@ -73,14 +70,8 @@ function DesignsContent() {
     height: img.height,
   }));
 
-  useEffect(() => {
-    setActiveCategory(categoryParam);
-    setActiveSubcategory(subcategoryParam);
-    setDisplayCount(ITEMS_PER_PAGE);
-  }, [categoryParam, subcategoryParam]);
-
   return (
-    <div className="min-h-screen bg-[#F5F3F0]">
+    <div className="min-h-screen bg-dw-bg-primary">
       {/* Page Header */}
       <div className="bg-[#1A1A1A] text-white pt-28 pb-12">
         <div className="container-dw">
@@ -99,7 +90,7 @@ function DesignsContent() {
             <button
               onClick={() => handleCategoryChange("all")}
               className={cn(
-                "flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200",
+                "flex-shrink-0 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
                 activeCategory === "all"
                   ? "bg-dw-mustard text-white"
                   : "bg-dw-bg-secondary text-dw-text-secondary hover:bg-dw-mustard/20"
@@ -112,7 +103,7 @@ function DesignsContent() {
                 key={cat.id}
                 onClick={() => handleCategoryChange(cat.slug)}
                 className={cn(
-                  "flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200",
+                  "flex-shrink-0 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
                   activeCategory === cat.slug
                     ? "bg-dw-mustard text-white"
                     : "bg-dw-bg-secondary text-dw-text-secondary hover:bg-dw-mustard/20"
@@ -133,7 +124,7 @@ function DesignsContent() {
               <button
                 onClick={() => handleSubcategoryChange("all")}
                 className={cn(
-                  "px-4 py-2 rounded-full text-sm font-medium transition-all",
+                  "px-4 py-2 rounded-lg text-sm font-medium transition-all",
                   activeSubcategory === "all"
                     ? "bg-dw-olive text-white"
                     : "border border-dw-olive text-dw-olive hover:bg-dw-olive/10"
@@ -146,7 +137,7 @@ function DesignsContent() {
                   key={sub.id}
                   onClick={() => handleSubcategoryChange(sub.slug)}
                   className={cn(
-                    "px-4 py-2 rounded-full text-sm font-medium transition-all",
+                    "px-4 py-2 rounded-lg text-sm font-medium transition-all",
                     activeSubcategory === sub.slug
                       ? "bg-dw-olive text-white"
                       : "border border-dw-olive text-dw-olive hover:bg-dw-olive/10"
@@ -233,7 +224,7 @@ function DesignsContent() {
           <div className="text-center mt-12">
             <button
               onClick={() => setDisplayCount((c) => c + ITEMS_PER_PAGE)}
-              className="bg-white border-2 border-dw-mustard text-dw-mustard hover:bg-dw-mustard hover:text-white font-semibold px-10 py-3.5 rounded-full transition-all duration-300"
+              className="bg-white border-2 border-dw-mustard text-dw-mustard hover:bg-dw-mustard hover:text-white font-semibold px-10 py-3.5 rounded-lg transition-all duration-300"
             >
               Load More Designs ({filteredImages.length - displayCount} remaining)
             </button>
@@ -266,7 +257,7 @@ function DesignsContent() {
 
 export default function DesignsPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#F5F3F0] flex items-center justify-center">Loading...</div>}>
+    <Suspense fallback={<div className="min-h-screen bg-dw-bg-primary flex items-center justify-center">Loading...</div>}>
       <DesignsContent />
     </Suspense>
   );

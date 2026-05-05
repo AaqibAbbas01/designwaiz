@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -52,7 +53,7 @@ const sections = [
 
 export default function ModularKitchenGuidePage() {
   return (
-    <div className="min-h-screen bg-[#F5F3F0]">
+    <div className="min-h-screen bg-dw-bg-primary">
       <section className="bg-[#1A1A1A] text-white pt-28 pb-14">
         <div className="container-dw">
           <p className="text-dw-mustard font-semibold mb-3">Interior Design Guides</p>
@@ -65,7 +66,7 @@ export default function ModularKitchenGuidePage() {
 
       <section className="section-padding pt-10">
         <div className="container-dw">
-          <div className="relative aspect-[16/8] rounded-[20px] overflow-hidden shadow-xl mb-12">
+          <div className="relative aspect-[16/8] rounded-lg overflow-hidden shadow-sm border border-dw-border mb-12">
             <Image
               src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=1600&h=900&fit=crop"
               alt="Modern modular kitchen"
@@ -78,7 +79,7 @@ export default function ModularKitchenGuidePage() {
           <div className="grid lg:grid-cols-[1fr_280px] gap-12 items-start">
             <article className="space-y-10">
               {sections.map((section, index) => (
-                <div key={section.title} className="bg-white rounded-[20px] p-8 shadow-sm border border-dw-border">
+                <div key={section.title} className="bg-white rounded-lg p-8 shadow-sm border border-dw-border">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 rounded-full bg-dw-mustard/15 text-dw-mustard flex items-center justify-center font-semibold">
                       {index + 1}
@@ -88,23 +89,23 @@ export default function ModularKitchenGuidePage() {
                   <p className="text-dw-text-secondary leading-8">{section.body}</p>
 
                   {index === 3 && (
-                    <div className="mt-8 rounded-[20px] bg-[#1A1A1A] text-white p-6">
+                    <div className="mt-8 rounded-lg bg-[#1A1A1A] text-white p-6">
                       <p className="text-dw-mustard font-semibold mb-2">Free Kitchen Consultation</p>
                       <p className="text-white/80 mb-4">Get layout help, finish recommendations, and budget guidance from our designers.</p>
-                      <a href="/#consultation" className="inline-flex items-center rounded-full bg-dw-mustard px-5 py-3 font-semibold text-white hover:bg-dw-olive transition-colors">Book Free Consultation</a>
+                      <Link href="/#consultation" className="inline-flex items-center rounded-lg bg-dw-mustard px-5 py-3 font-semibold text-white hover:bg-dw-olive transition-colors">Book Free Consultation</Link>
                     </div>
                   )}
                 </div>
               ))}
 
-              <div className="rounded-[20px] bg-gradient-to-r from-[#E8E2D8] to-[#F0EDE8] p-8 border border-dw-border">
+              <div className="rounded-lg bg-dw-bg-secondary p-8 border border-dw-border">
                 <h3 className="text-h3 mb-3">Ready to design your kitchen?</h3>
                 <p className="text-dw-text-secondary mb-5">Our designers can help you pick the best layout, finishes, and storage systems for your space and budget.</p>
-                <a href="/#consultation" className="inline-flex items-center rounded-full bg-dw-mustard px-6 py-3 font-semibold text-white hover:bg-dw-olive transition-colors">Get Free Kitchen Consultation</a>
+                <Link href="/#consultation" className="inline-flex items-center rounded-lg bg-dw-mustard px-6 py-3 font-semibold text-white hover:bg-dw-olive transition-colors">Get Free Kitchen Consultation</Link>
               </div>
             </article>
 
-            <aside className="lg:sticky lg:top-28 bg-white rounded-[20px] p-6 shadow-sm border border-dw-border">
+            <aside className="lg:sticky lg:top-28 bg-white rounded-lg p-6 shadow-sm border border-dw-border">
               <h3 className="font-heading text-xl mb-4">In this guide</h3>
               <ol className="space-y-3 text-sm text-dw-text-secondary">
                 {sections.map((section, index) => (

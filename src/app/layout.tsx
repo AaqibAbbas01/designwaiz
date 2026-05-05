@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased scroll-smooth">
-      <body className="min-h-screen flex flex-col bg-[#F5F3F0]">
+      <body className="min-h-screen flex flex-col bg-dw-bg-primary">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

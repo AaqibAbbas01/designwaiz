@@ -33,7 +33,7 @@ const REVIEWS = [
 
 export default function GoogleReviews() {
   return (
-    <section className="section-padding bg-[#EDEAE5]">
+    <section className="section-padding bg-dw-bg-secondary">
       <div className="container-dw">
         <h2 className="text-h2 text-center mb-12">What Google Says About Us</h2>
 
@@ -57,7 +57,7 @@ export default function GoogleReviews() {
         {/* Review Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {REVIEWS.map((review, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-xl shadow-sm">
+            <div key={idx} className="bg-white p-6 rounded-lg shadow-sm border border-dw-border">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 rounded-full bg-dw-mustard/20 flex items-center justify-center font-semibold text-dw-mustard">
                   {review.avatar}
@@ -79,7 +79,7 @@ export default function GoogleReviews() {
                 </div>
               </div>
               <p className="text-sm text-dw-text-secondary leading-relaxed mb-3">
-                "{review.text}"
+                &ldquo;{review.text}&rdquo;
               </p>
               <p className="text-xs text-dw-text-muted">{review.date}</p>
             </div>

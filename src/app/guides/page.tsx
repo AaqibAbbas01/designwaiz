@@ -33,7 +33,7 @@ const GUIDES = [
 
 export default function GuidesPage() {
   return (
-    <div className="min-h-screen bg-[#F5F3F0]">
+    <div className="min-h-screen bg-dw-bg-primary">
       {/* Header */}
       <div className="bg-[#1A1A1A] text-white pt-28 pb-12">
         <div className="container-dw">
@@ -62,7 +62,7 @@ export default function GuidesPage() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-dw-mustard text-white text-xs font-semibold px-3 py-1 rounded-full">
+                    <span className="bg-dw-mustard text-white text-xs font-semibold px-3 py-1 rounded-lg">
                       {guide.category}
                     </span>
                   </div>

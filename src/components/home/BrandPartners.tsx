@@ -1,9 +1,9 @@
 const PARTNERS = [
-  { name: "Century Plyboards" },
+  { name: "CenturyPly" },
   { name: "Greenlam Industries" },
-  { name: "Jaguar" },
-  { name: "ICE" },
-  { name: "Sitka" },
+  { name: "Jaquar" },
+  { name: "ICA" },
+  { name: "Sika" },
   { name: "Hettich" },
   { name: "Hafele" },
   { name: "Ebco" },
@@ -16,7 +16,7 @@ export default function BrandPartners() {
   const allLogos = [...PARTNERS, ...PARTNERS];
 
   return (
-    <section className="section-padding bg-[#EDEAE5]">
+    <section className="section-padding bg-dw-bg-secondary">
       <div className="container-dw">
         <div className="text-center mb-12">
           <h2 className="text-h2 mb-3">Our Brand Partners</h2>
@@ -30,10 +30,12 @@ export default function BrandPartners() {
             {allLogos.map((partner, idx) => (
               <div
                 key={idx}
-                className="flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+                className="flex-shrink-0 flex items-center justify-center transition-all duration-300 opacity-70 hover:opacity-100"
               >
-                <div className="h-12 min-w-[120px] flex items-center justify-center px-4 bg-white rounded-lg border border-dw-border">
-                  <span className="text-sm font-semibold text-dw-text-secondary">{partner.name}</span>
+                <div className="h-14 w-44 flex items-center justify-center px-5 bg-white rounded-lg border border-dw-border shadow-sm">
+                  <span className="text-sm font-semibold text-dw-text-secondary text-center leading-tight">
+                    {partner.name}
+                  </span>
                 </div>
               </div>
             ))}

@@ -3,27 +3,27 @@ import { Shield, Clock, BadgeIndianRupee, Hammer } from "lucide-react";
 const PRINCIPLES = [
   {
     icon: Shield,
-    title: "Quality Work",
+    title: "Quality Control",
     description:
-      "Every project undergoes rigorous quality checks using premium-grade materials and expert craftsmanship.",
+      "Every stage is reviewed for finish quality, material fit, and execution accuracy.",
   },
   {
     icon: Clock,
-    title: "Punctuality",
+    title: "Timeline Discipline",
     description:
-      "We honour timelines like promises — your project is delivered on schedule, every single time.",
+      "Clear project schedules keep design, procurement, and installation moving predictably.",
   },
   {
     icon: BadgeIndianRupee,
-    title: "Value For Money",
+    title: "Transparent Value",
     description:
-      "Luxury interiors at competitive prices — because great design shouldn't cost a fortune.",
+      "Premium planning and dependable materials are balanced with practical budget control.",
   },
   {
     icon: Hammer,
-    title: "Durability",
+    title: "Built To Last",
     description:
-      "Built to last a decade and beyond — our interiors stand the test of time and daily use.",
+      "Details, hardware, and finishes are selected for everyday use and long-term performance.",
   },
 ];
 
@@ -37,12 +37,12 @@ export default function CompanyPrinciples() {
             return (
               <div
                 key={idx}
-                className="text-center p-6 rounded-xl border border-dw-border hover:border-dw-mustard transition-all duration-300 hover:-translate-y-1 hover:shadow-lg group"
+                className="text-left p-6 rounded-lg border border-dw-border bg-white hover:border-dw-mustard transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-dw-olive/10 mb-4 group-hover:bg-dw-mustard/20 transition-colors">
-                  <Icon className="text-dw-olive group-hover:text-dw-mustard transition-colors" size={32} />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-dw-olive/10 mb-5 group-hover:bg-dw-mustard/15 transition-colors">
+                  <Icon className="text-dw-olive group-hover:text-dw-mustard transition-colors" size={24} />
                 </div>
-                <h3 className="font-heading font-semibold text-xl mb-2 text-dw-text-primary">
+                <h3 className="font-heading font-semibold text-lg mb-3 text-dw-text-primary">
                   {principle.title}
                 </h3>
                 <p className="text-sm text-dw-text-secondary leading-relaxed">

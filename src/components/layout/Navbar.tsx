@@ -26,11 +26,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
-
   const navBg = scrolled || isDesignsPage || pathname !== "/"
     ? "bg-white/95 backdrop-blur-sm shadow-[0_2px_20px_rgba(0,0,0,0.08)]"
     : "bg-transparent";
@@ -95,7 +90,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center">
               <Link
                 href="/#consultation"
-                className="bg-dw-mustard hover:bg-dw-olive text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 whitespace-nowrap"
+                className="bg-dw-dark hover:bg-dw-mustard text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-300 whitespace-nowrap"
               >
                 Book Free Consultation
               </Link>
@@ -151,6 +146,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={link.href}
+                    onClick={() => setMobileOpen(false)}
                     className={cn(
                       "block text-3xl font-heading font-semibold py-3 border-b border-white/10 transition-colors",
                       link.highlight ? "text-dw-mustard" : "text-white hover:text-dw-mustard"
@@ -169,7 +165,8 @@ export default function Navbar() {
               >
                 <Link
                   href="/#consultation"
-                  className="inline-block w-full text-center bg-dw-mustard text-white font-semibold text-lg py-4 rounded-full hover:bg-dw-olive transition-colors"
+                  onClick={() => setMobileOpen(false)}
+                  className="inline-block w-full text-center bg-dw-mustard text-white font-semibold text-lg py-4 rounded-lg hover:bg-dw-olive transition-colors"
                 >
                   Book Free Consultation
                 </Link>
