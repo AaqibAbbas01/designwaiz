@@ -8,7 +8,7 @@ const FEATURES = [
   },
   {
     icon: BadgeIndianRupee,
-    title: "Lowest Prices Guaranteed",
+    title: "Best Prices Guaranteed",
     description: "We provide the best possible solutions that suit your finances.",
   },
   {
@@ -45,10 +45,10 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={idx}
-                className="card-base p-6 text-center"
+                className="card-base p-6 text-center group hover:bg-dw-mustard/10 hover:border-dw-mustard transition-all duration-300"
               >
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-dw-olive/10 mb-4">
-                  <Icon className="text-dw-olive" size={28} />
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-dw-olive/10 mb-4 group-hover:bg-dw-mustard/20 transition-colors">
+                  <Icon className="text-dw-olive group-hover:text-dw-mustard transition-colors" size={28} />
                 </div>
                 <h3 className="font-heading font-semibold text-base mb-2 text-dw-text-primary">
                   {feature.title}

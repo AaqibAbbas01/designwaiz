@@ -117,8 +117,8 @@ function DesignsContent() {
       </div>
 
       <div className="container-dw py-10">
-        {/* Subcategory Tabs */}
-        {activeCategoryData?.subcategories && (
+        {/* Subcategory Tabs — hidden for modular-kitchen per design spec */}
+        {activeCategoryData?.subcategories && activeCategory !== "modular-kitchen" && (
           <div className="mb-8">
             <div className="flex gap-2 flex-wrap">
               <button

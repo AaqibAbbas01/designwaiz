@@ -17,6 +17,8 @@
   --color-dw-olive: #53633A;
   --color-dw-olive-light: #7B8B59;
   --color-dw-gold: #A77A2F;
+  --color-dw-teal: #0D9488;
+  --color-dw-teal-dark: #0A7A70;
   --color-dw-border: #DAD7CF;
   --color-dw-dark: #111111;
 
@@ -63,6 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: #F7F7F4; }
 ::-webkit-scrollbar-thumb { background: #A77A2F; border-radius: 3px; }
+
+/* Hide scrollbar utility */
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
 
 /* ============================================
    TYPOGRAPHY SCALE
@@ -180,9 +186,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: border-color 300ms ease, box-shadow 300ms ease, transform 300ms ease;
 }
 .card-base:hover {
-  border-color: rgba(167, 122, 47, 0.55);
+  border-color: #A77A2F;
   box-shadow: 0 12px 28px rgba(17,17,17,0.1);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  background: #FDFAF5;
 }
 
 /* Image zoom on hover */

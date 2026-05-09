@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import type { PointerEvent } from "react";
-import { ArrowRight, CheckCircle2, Compass, Home, Ruler } from "lucide-react";
+import { CheckCircle2, Compass, Home } from "lucide-react";
 
 const FEATURES = [
   {
@@ -14,11 +14,6 @@ const FEATURES = [
     icon: Compass,
     title: "Direction Mapping",
     description: "Map each area against key directions before finalizing the layout.",
-  },
-  {
-    icon: Ruler,
-    title: "Practical Remedies",
-    description: "Suggest design-friendly corrections without compromising aesthetics.",
   },
 ];
 
@@ -253,10 +248,7 @@ export default function VastuChecker() {
               })}
             </div>
 
-            <button className="mt-8 inline-flex items-center gap-2 rounded-lg bg-dw-dark px-7 py-3.5 font-semibold text-white transition-colors duration-300 hover:bg-dw-mustard">
-              Request Vastu Review
-              <ArrowRight size={18} />
-            </button>
+
           </div>
         </div>
       </div>

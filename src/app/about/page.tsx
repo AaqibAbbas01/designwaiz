@@ -17,20 +17,16 @@ const timeline = [
   { year: "2011", milestone: "Founded with a team of 5" },
   { year: "Expansion Phase", milestone: "Expanded operations to Punjab, Himachal Pradesh, and Haryana" },
   { year: "2020", milestone: "Completed 500+ projects" },
-  { year: "2022", milestone: "Expanded into construction services" },
-  { year: "2024", milestone: "Introduced in-house manufacturing for furniture and modular kitchens" },
-  { year: "2026", milestone: "Continuing innovation and expansion" },
+  { year: "2022", milestone: "Moved into construction services" },
+  { year: "2024", milestone: "Introduced in-house manufacturing of furniture and modular kitchens" },
+  { year: "2026", milestone: "Expanding our network" },
 ];
 
 const team = [
-  { name: "Aanya Mehta", role: "Senior Interior Designer" },
-  { name: "Vikram Singh", role: "Project Manager" },
-  { name: "Neha Kapoor", role: "Kitchen Specialist" },
-  { name: "Arjun Patel", role: "3D Visualization Expert" },
-  { name: "Sakshi Jain", role: "Corporate Design Lead" },
-  { name: "Rohan Deshmukh", role: "Wardrobe & Storage Expert" },
-  { name: "Ishita Roy", role: "Colour & Material Consultant" },
-  { name: "Karan Malhotra", role: "Client Relations Head" },
+  { name: "Waseem Alam", role: "Founder" },
+  { name: "Sajid Khan", role: "Senior Civil Engineer" },
+  { name: "Arvind Kumar", role: "Project Manager" },
+  { name: "Huzaifa Hasan", role: "Architect" },
 ];
 
 export default function AboutPage() {
@@ -101,7 +97,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="text-dw-mustard font-semibold mb-2">Meet Our Founder</p>
-            <h2 className="text-h2 mb-2">Sample Founder Name</h2>
+            <h2 className="text-h2 mb-2">Waseem Alam</h2>
             <p className="text-dw-olive font-medium mb-5">Founder & Chief Design Officer</p>
             <p className="text-dw-text-secondary leading-8 mb-6">
               A visionary designer with 15+ years of experience in residential and commercial interiors, blending Indian sensibility with global design trends. Under this leadership, DesignWaiz has grown from a boutique studio into one of India’s most trusted design firms.

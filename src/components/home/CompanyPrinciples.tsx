@@ -37,7 +37,7 @@ export default function CompanyPrinciples() {
             return (
               <div
                 key={idx}
-                className="text-left p-6 rounded-lg border border-dw-border bg-white hover:border-dw-mustard transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm group"
+                className="text-left p-6 rounded-lg border border-dw-border bg-white hover:border-dw-mustard hover:bg-dw-mustard/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-md group"
               >
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-dw-olive/10 mb-5 group-hover:bg-dw-mustard/15 transition-colors">
                   <Icon className="text-dw-olive group-hover:text-dw-mustard transition-colors" size={24} />
