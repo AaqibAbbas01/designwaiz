@@ -23,8 +23,8 @@ const FEATURES = [
   },
   {
     icon: Shield,
-    title: "11-Year Warranty",
-    description: "We invigorate client relationships by offering warranties that last a decade.",
+    title: "5-Year Warranty",
+    description: "We stand behind our work with a 5-year warranty, ensuring lasting quality and peace of mind.",
   },
 ];
 

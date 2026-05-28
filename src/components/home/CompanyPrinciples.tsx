@@ -31,6 +31,15 @@ export default function CompanyPrinciples() {
   return (
     <section className="section-padding bg-white">
       <div className="container-dw">
+        <div className="text-center mb-12">
+          <p className="text-xs font-semibold uppercase text-dw-mustard mb-3">
+            How We Work
+          </p>
+          <h2 className="text-h2 mb-3">Our Principles</h2>
+          <p className="text-lg text-dw-text-secondary max-w-2xl mx-auto">
+            Every project we take on is guided by four core commitments that define how we design, build, and deliver.
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {PRINCIPLES.map((principle, idx) => {
             const Icon = principle.icon;

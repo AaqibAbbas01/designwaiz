@@ -8,7 +8,11 @@ export default function BottomCTA() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you! We'll send you a quote shortly.");
+    const subject = encodeURIComponent("Free Quote Request — DesignWaiz");
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email}`
+    );
+    window.location.href = `mailto:idesignwaiz@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -62,13 +66,22 @@ export default function BottomCTA() {
               <p className="text-center text-sm text-dw-text-muted pt-2">
                 ✓ Trusted for 700+ homes designed across North India
               </p>
+              <p className="text-center text-sm text-dw-text-secondary pt-1">
+                Or email us at{" "}
+                <a
+                  href="mailto:idesignwaiz@gmail.com"
+                  className="text-dw-mustard font-semibold hover:underline"
+                >
+                  idesignwaiz@gmail.com
+                </a>
+              </p>
             </form>
           </div>
 
           {/* Right: Image */}
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-sm border border-dw-border">
             <Image
-              src="https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?w=800&h=600&fit=crop"
+              src="/images/LIVING ROOM/IMG_4365.JPG"
               alt="Beautiful living room interior"
               fill
               className="object-cover"

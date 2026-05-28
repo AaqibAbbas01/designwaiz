@@ -93,7 +93,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center">
               <Link
                 href="/#consultation"
-                className="bg-dw-dark hover:bg-dw-mustard text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-300 whitespace-nowrap"
+                className="bg-dw-mustard hover:bg-dw-olive text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-300 whitespace-nowrap"
               >
                 Book Free Consultation
               </Link>
