@@ -1,21 +1,19 @@
 import Image from "next/image";
 
 const ASSOCIATES = [
-  { name: "CenturyPly", logo: null as string | null },
-  { name: "Greenlam Industries", logo: null as string | null },
-  { name: "Jaquar", logo: null as string | null },
-  { name: "ICA", logo: null as string | null },
-  { name: "Sika", logo: null as string | null },
-  { name: "Hettich", logo: null as string | null },
-  { name: "Hafele", logo: null as string | null },
-  { name: "Ebco", logo: null as string | null },
-  { name: "Asian Paints", logo: null as string | null },
-  { name: "Berger Paints", logo: null as string | null },
+  { name: "CenturyPly", logo: "/brand-logos/centuryply.svg" },
+  { name: "Greenlam Industries", logo: "/brand-logos/greenlam.svg" },
+  { name: "Jaquar", logo: "/brand-logos/jaquar.svg" },
+  { name: "ICA", logo: "/brand-logos/ica.svg" },
+  { name: "Sika", logo: "/brand-logos/sika.svg" },
+  { name: "Hettich", logo: "/brand-logos/hettich.svg" },
+  { name: "Hafele", logo: "/brand-logos/hafele.svg" },
+  { name: "Ebco", logo: "/brand-logos/ebco.svg" },
+  { name: "Asian Paints", logo: "/brand-logos/asian-paints.svg" },
+  { name: "Berger Paints", logo: "/brand-logos/berger-paints.svg" },
 ];
 
 export default function BrandPartners() {
-  const allLogos = [...ASSOCIATES, ...ASSOCIATES];
-
   return (
     <section className="section-padding bg-dw-bg-secondary">
       <div className="container-dw">
@@ -26,31 +24,21 @@ export default function BrandPartners() {
           </p>
         </div>
 
-        <div className="marquee-container overflow-hidden relative">
-          <div className="flex gap-8 animate-marquee">
-            {allLogos.map((associate, idx) => (
-              <div
-                key={idx}
-                className="flex-shrink-0 flex items-center justify-center transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-105"
-              >
-                <div className="h-16 w-48 flex items-center justify-center px-5 bg-white rounded-xl border border-dw-border shadow-sm hover:border-dw-mustard hover:shadow-md transition-all duration-300">
-                  {associate.logo ? (
-                    <Image
-                      src={associate.logo}
-                      alt={associate.name}
-                      width={160}
-                      height={48}
-                      className="object-contain max-h-10"
-                    />
-                  ) : (
-                    <span className="text-sm font-semibold text-dw-text-secondary text-center leading-tight tracking-wide">
-                      {associate.name}
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
+          {ASSOCIATES.map((associate) => (
+            <div
+              key={associate.name}
+              className="h-24 bg-white rounded-2xl border border-dw-border shadow-sm hover:border-dw-mustard hover:shadow-md transition-all duration-300 flex items-center justify-center px-5"
+            >
+              <Image
+                src={associate.logo}
+                alt={associate.name}
+                width={180}
+                height={64}
+                className="object-contain max-h-14 w-auto"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

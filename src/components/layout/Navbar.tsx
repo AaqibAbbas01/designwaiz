@@ -2,14 +2,17 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import ConsultationModal from "@/components/ui/ConsultationModal";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Interiors", href: "/designs", highlight: true },
+  { label: "Projects", href: "/projects" },
+  { label: "Interiors", href: "/designs" },
   { label: "Wall Art", href: "/designs?category=wall-art" },
   { label: "Facade", href: "/designs?category=facade" },
   { label: "Modular", href: "/designs?category=modular" },
@@ -20,6 +23,7 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [consultationOpen, setConsultationOpen] = useState(false);
   const pathname = usePathname();
   const isDesignsPage = pathname === "/designs";
 
@@ -37,6 +41,12 @@ export default function Navbar() {
     ? "text-[#1A1A1A]"
     : "text-white";
 
+  const isActiveLink = (href: string) => {
+    if (href === "/designs") return pathname === "/designs";
+    if (href.startsWith("/designs?")) return false;
+    return pathname === href;
+  };
+
   return (
     <>
       <header
@@ -46,32 +56,28 @@ export default function Navbar() {
         )}
       >
         <div className="container-dw">
-          <nav className="flex items-center justify-between h-16 lg:h-20">
+          <nav className="flex items-center justify-between h-24 lg:h-28 gap-6 lg:gap-10">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-              <span
-                className={cn(
-                  "font-heading text-2xl font-bold tracking-tight transition-colors duration-300",
-                  textColor
-                )}
-              >
-                Design
-                <span className="text-dw-mustard">W</span>
-                <span className={cn("transition-colors duration-300", textColor === "text-white" ? "text-white/90" : "text-[#1A1A1A]")}>
-                  aiz
-                </span>
-              </span>
+            <Link href="/" className="flex items-center flex-shrink-0 min-w-[180px] lg:min-w-[280px]">
+              <Image
+                src="/logodesignwaiz.png"
+                alt="DesignWaiz"
+                width={612}
+                height={408}
+                priority
+                className="w-[170px] lg:w-[280px] h-auto"
+              />
             </Link>
 
             {/* Desktop Nav */}
-            <ul className="hidden lg:flex items-center gap-8">
+            <ul className="hidden lg:flex items-center gap-8 flex-1 justify-center">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className={cn(
                       "relative text-sm font-medium transition-colors duration-200 group",
-                      link.highlight
+                      isActiveLink(link.href)
                         ? "text-dw-mustard font-semibold"
                         : cn(textColor, "hover:text-dw-mustard")
                     )}
@@ -81,7 +87,7 @@ export default function Navbar() {
                     <span
                       className={cn(
                         "absolute -bottom-1 left-0 h-0.5 bg-dw-mustard rounded-full transition-all duration-300",
-                        pathname === link.href ? "w-full" : "w-0 group-hover:w-full"
+                        isActiveLink(link.href) ? "w-full" : "w-0 group-hover:w-full"
                       )}
                     />
                   </Link>
@@ -91,12 +97,13 @@ export default function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center">
-              <Link
-                href="/#consultation"
+              <button
+                type="button"
+                onClick={() => setConsultationOpen(true)}
                 className="bg-dw-mustard hover:bg-dw-olive text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-300 whitespace-nowrap"
               >
                 Book Free Consultation
-              </Link>
+              </button>
             </div>
 
             {/* Mobile Hamburger */}
@@ -126,9 +133,16 @@ export default function Navbar() {
           >
             {/* Close button */}
             <div className="flex items-center justify-between px-6 py-5">
-              <span className="font-heading text-2xl font-bold text-white">
-                Design<span className="text-dw-mustard">W</span>aiz
-              </span>
+              <Link href="/" onClick={() => setMobileOpen(false)} className="flex items-center">
+                <Image
+                  src="/logodesignwaiz.png"
+                  alt="DesignWaiz"
+                  width={612}
+                  height={408}
+                  priority
+                  className="w-[180px] h-auto rounded-md bg-white px-2 py-1"
+                />
+              </Link>
               <button
                 onClick={() => setMobileOpen(false)}
                 className="p-2 text-white/80 hover:text-white"
@@ -152,7 +166,7 @@ export default function Navbar() {
                     onClick={() => setMobileOpen(false)}
                     className={cn(
                       "block text-3xl font-heading font-semibold py-3 border-b border-white/10 transition-colors",
-                      link.highlight ? "text-dw-mustard" : "text-white hover:text-dw-mustard"
+                      isActiveLink(link.href) ? "text-dw-mustard" : "text-white hover:text-dw-mustard"
                     )}
                   >
                     {link.label}
@@ -166,18 +180,22 @@ export default function Navbar() {
                 transition={{ delay: 0.36, duration: 0.3 }}
                 className="mt-8"
               >
-                <Link
-                  href="/#consultation"
-                  onClick={() => setMobileOpen(false)}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileOpen(false);
+                    setConsultationOpen(true);
+                  }}
                   className="inline-block w-full text-center bg-dw-mustard text-white font-semibold text-lg py-4 rounded-lg hover:bg-dw-olive transition-colors"
                 >
                   Book Free Consultation
-                </Link>
+                </button>
               </motion.div>
             </nav>
           </motion.div>
         )}
       </AnimatePresence>
+      <ConsultationModal isOpen={consultationOpen} onClose={() => setConsultationOpen(false)} />
     </>
   );
 }

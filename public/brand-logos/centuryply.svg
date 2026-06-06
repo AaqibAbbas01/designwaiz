@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title">
+  <title>CenturyPly</title>
+  <rect width="320" height="96" rx="18" fill="#ffffff"/>
+  <rect x="20" y="18" width="60" height="60" rx="10" fill="#111111"/>
+  <rect x="26" y="24" width="48" height="48" rx="8" fill="none" stroke="#b78935" stroke-width="3"/>
+  <path d="M38 34h10l6 18 7-18h9L58 62h-8z" fill="#b78935"/>
+  <text x="98" y="42" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111111">Century</text>
+  <text x="98" y="67" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#b78935">Ply</text>
+</svg>

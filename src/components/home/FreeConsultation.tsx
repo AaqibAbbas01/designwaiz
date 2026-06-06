@@ -1,21 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import ConsultationForm from "@/components/ui/ConsultationForm";
 
 export default function FreeConsultation() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    city: "",
-    propertyType: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission logic here
-    alert("Thank you! We'll contact you shortly.");
-  };
-
   return (
     <section id="consultation" className="section-padding bg-[#1A1A1A] text-white">
       <div className="container-dw">
@@ -48,55 +35,7 @@ export default function FreeConsultation() {
           </div>
 
           {/* Right: Form */}
-          <form onSubmit={handleSubmit} className="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-white/10">
-            <div className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-dw-mustard"
-                required
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-dw-mustard"
-                required
-              />
-              <input
-                type="text"
-                placeholder="City"
-                value={formData.city}
-                onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-dw-mustard"
-                required
-              />
-              <select
-                value={formData.propertyType}
-                onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
-                className="w-full px-4 py-3.5 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-dw-mustard"
-                required
-              >
-                <option value="" disabled className="text-black">Property Type</option>
-                <option value="1bhk" className="text-black">1 BHK</option>
-                <option value="2bhk" className="text-black">2 BHK</option>
-                <option value="3bhk" className="text-black">3 BHK</option>
-                <option value="4bhk" className="text-black">4+ BHK</option>
-                <option value="villa" className="text-black">Villa</option>
-                <option value="office" className="text-black">Office</option>
-              </select>
-
-              <button
-                type="submit"
-                className="w-full bg-dw-mustard hover:bg-white hover:text-dw-dark text-white font-semibold py-4 rounded-lg transition-all duration-300"
-              >
-                Book Free Consultation
-              </button>
-            </div>
-          </form>
+          <ConsultationForm className="bg-white/5 backdrop-blur-sm p-8 rounded-lg border border-white/10" />
         </div>
       </div>
     </section>

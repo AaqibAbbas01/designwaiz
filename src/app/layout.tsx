@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "yet-another-react-lightbox/styles.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="title">
+  <title>Asian Paints</title>
+  <rect width="320" height="96" rx="18" fill="#ffffff"/>
+  <path d="M44 34c10-10 24-10 34 0l14 14c10 10 24 10 34 0" fill="none" stroke="#6f2dbd" stroke-width="10" stroke-linecap="round"/>
+  <path d="M44 54c10 10 24 10 34 0l14-14c10-10 24-10 34 0" fill="none" stroke="#ff6b00" stroke-width="10" stroke-linecap="round"/>
+  <text x="154" y="48" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#6f2dbd">asian</text>
+  <text x="154" y="68" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ff6b00">paints</text>
+</svg>

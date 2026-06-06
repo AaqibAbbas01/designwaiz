@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 // Using SVG paths for social icons not available in lucide-react
@@ -50,9 +51,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12 border-b border-white/10">
           {/* Column 1: Brand */}
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-4">
-              Design<span className="text-dw-mustard">W</span>aiz
-            </h3>
+            <Link
+              href="/"
+              className="inline-flex items-center rounded-lg bg-white px-3 py-2 mb-4"
+              aria-label="DesignWaiz home"
+            >
+              <Image
+                src="/logodesignwaiz.png"
+                alt="DesignWaiz"
+                width={612}
+                height={408}
+                className="h-12 w-auto"
+              />
+            </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Transforming spaces into stunning, functional environments. Your dream home is just a consultation away.
             </p>

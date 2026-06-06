@@ -44,7 +44,7 @@ const SLIDES: Slide[] = [
     subtext: "Modular solutions tailored to your space — from sleek kitchens to elegant wardrobes.",
     cta: "View Designs",
     ctaAction: "navigate",
-    ctaTarget: "/designs",
+    ctaTarget: "/designs?category=modular-kitchen",
   },
   {
     id: 5,
@@ -52,8 +52,8 @@ const SLIDES: Slide[] = [
     headline: "Built With Precision, Delivered On Time",
     subtext: "From foundation to finish — our construction team brings your vision to life.",
     cta: "Learn More",
-    ctaAction: "scroll",
-    ctaTarget: "#design-ideas",
+    ctaAction: "navigate",
+    ctaTarget: "/about",
   },
 ];
 
