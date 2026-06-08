@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate:projects-manifest": "node scripts/generate-projects-manifest.mjs",
+    "prebuild": "npm run generate:projects-manifest",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
