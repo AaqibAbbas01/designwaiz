@@ -6,7 +6,7 @@ export default function VideoShowcase() {
           {/* YouTube Video Embed */}
           <div className="relative aspect-video rounded-lg overflow-hidden shadow-sm border border-dw-border">
             <iframe
-              src="https://www.youtube.com/embed/mSc-CSiqIqI?rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/pQlEj979iZ4?rel=0&modestbranding=1"
               title="DesignWaiz — Company Introduction"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

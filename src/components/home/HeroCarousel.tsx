@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -21,7 +21,7 @@ interface Slide {
 const SLIDES: Slide[] = [
   {
     id: 1,
-    image: "/images/Facade & Others/1.South-Facade-1-1.jpg",
+    image: "/images/Facade & Others/ICE Home Night.jpg",
     headline: "Facades That Make a Statement",
     subtext: "Your building's exterior is the first story it tells. We design facades that command attention, reflect architectural intent, and stand the test of time — from refined stone cladding to contemporary glass and metal finishes.",
     cta: "Explore Facades",
@@ -30,7 +30,7 @@ const SLIDES: Slide[] = [
   },
   {
     id: 2,
-    image: "/images/CORPORATE OFFICE/PHOTO-2026-01-11-15-51-44.jpg",
+    image: "/images/CORPORATE OFFICE/Screenshot 2019-02-09 at 6.01.23 PM.png",
     headline: "Workspaces That Inspire Productivity",
     subtext: "Corporate interiors designed for the modern enterprise — where design meets performance.",
     cta: "Corporate Solutions",
@@ -39,7 +39,7 @@ const SLIDES: Slide[] = [
   },
   {
     id: 3,
-    image: "/images/MODULAR KITCHEN/IMG_1118.JPG",
+    image: "/images/MODULAR KITCHEN/IMG_4344.JPG",
     headline: "Dream Kitchens & Wardrobes",
     subtext: "Modular solutions tailored to your space — from sleek kitchens to elegant wardrobes.",
     cta: "View Designs",
@@ -48,19 +48,19 @@ const SLIDES: Slide[] = [
   },
   {
     id: 5,
-    image: "/images/MASTER BEDROOM/IMG_4202.JPG",
+    image: "/images/LIVING ROOM/IMG_4365.JPG",
     headline: "Built With Precision, Delivered On Time",
     subtext: "From foundation to finish — our construction team brings your vision to life.",
-    cta: "Learn More",
+    cta: "Explore Living Rooms",
     ctaAction: "navigate",
-    ctaTarget: "/about",
+    ctaTarget: "/designs?category=living-room",
   },
 ];
 
 export default function HeroCarousel() {
-  const router = useRouter();
   const [current, setCurrent] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
+  const activeSlide = SLIDES[current];
 
   const next = useCallback(() => setCurrent((prev) => (prev + 1) % SLIDES.length), []);
   const prev = () => setCurrent((c) => (c - 1 + SLIDES.length) % SLIDES.length);
@@ -75,8 +75,6 @@ export default function HeroCarousel() {
   const handleCTA = (slide: Slide) => {
     if (slide.ctaAction === "scroll" && slide.ctaTarget) {
       document.querySelector(slide.ctaTarget)?.scrollIntoView({ behavior: "smooth" });
-    } else if (slide.ctaAction === "navigate" && slide.ctaTarget) {
-      router.push(slide.ctaTarget);
     } else if (slide.ctaAction === "modal") {
       setModalOpen(true);
     }
@@ -86,44 +84,50 @@ export default function HeroCarousel() {
     <>
       <section className="relative w-full h-[75vh] lg:h-[80vh] overflow-hidden bg-[#1A1A1A]">
         {/* Slides */}
-        {SLIDES.map((slide, idx) => (
-          <div
-            key={slide.id}
-            className={cn("carousel-slide", current === idx && "active")}
-          >
-            <Image
-              src={slide.image}
-              alt={slide.headline}
-              fill
-              className="object-cover"
-              priority={idx === 0}
-              quality={90}
-            />
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/10" />
+        <div key={activeSlide.id} className="carousel-slide active">
+          <Image
+            src={activeSlide.image}
+            alt={activeSlide.headline}
+            fill
+            className="object-cover"
+            priority
+            quality={90}
+            sizes="100vw"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-black/10" />
 
-            {/* Content */}
-            <div className="absolute inset-0 flex items-center">
-              <div className="container-dw">
-                <div className="max-w-2xl text-white">
-                  <p className="text-xs font-semibold uppercase text-dw-mustard mb-4">
-                    Design Waiz Interiors
-                  </p>
-                  <h1 className="text-h1 mb-5">{slide.headline}</h1>
-                  <p className="text-base md:text-lg mb-8 text-white/85 max-w-xl leading-8">
-                    {slide.subtext}
-                  </p>
+          {/* Content */}
+          <div className="absolute inset-0 flex items-center">
+            <div className="container-dw">
+              <div className="max-w-2xl text-white">
+                <p className="text-xs font-semibold uppercase text-dw-mustard mb-4">
+                  Design Waiz Interiors
+                </p>
+                <h1 className="text-h1 mb-5">{activeSlide.headline}</h1>
+                <p className="text-base md:text-lg mb-8 text-white/85 max-w-xl leading-8">
+                  {activeSlide.subtext}
+                </p>
+                {activeSlide.ctaAction === "navigate" && activeSlide.ctaTarget ? (
+                  <Link
+                    href={activeSlide.ctaTarget}
+                    className="inline-flex bg-dw-mustard hover:bg-white hover:text-dw-dark text-white font-semibold px-7 py-3 rounded-lg transition-all duration-300"
+                  >
+                    {activeSlide.cta}
+                  </Link>
+                ) : (
                   <button
-                    onClick={() => handleCTA(slide)}
+                    type="button"
+                    onClick={() => handleCTA(activeSlide)}
                     className="bg-dw-mustard hover:bg-white hover:text-dw-dark text-white font-semibold px-7 py-3 rounded-lg transition-all duration-300"
                   >
-                    {slide.cta}
+                    {activeSlide.cta}
                   </button>
-                </div>
+                )}
               </div>
             </div>
           </div>
-        ))}
+        </div>
 
         {/* Arrows */}
         <button

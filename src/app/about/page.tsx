@@ -4,29 +4,58 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us | DesignWaiz",
   description:
-    "Learn about DesignWaiz, our experience, founder story, design timeline, and the team behind our premium interior design projects.",
+    "Learn about DesignWaiz, our complete facade and interior solutions, company principles, clients, and experienced design team.",
 };
 
 const stats = [
-  { number: "700+", label: "Homes Designed" },
-  { number: "15+", label: "Years Experience" },
-  { number: "10+", label: "Designers" },
+  { number: "2015", label: "DesignWaiz Established" },
+  { number: "2011", label: "Facade Expertise Since" },
+  { number: "360°", label: "Facade & Interior Solutions" },
 ];
 
-const timeline = [
-  { year: "2011", milestone: "Founded with a team of 5" },
-  { year: "Expansion Phase", milestone: "Expanded operations to Punjab, Himachal Pradesh, and Haryana" },
-  { year: "2020", milestone: "Completed 500+ projects" },
-  { year: "2022", milestone: "Moved into construction services" },
-  { year: "2024", milestone: "Introduced in-house manufacturing of furniture and modular kitchens" },
-  { year: "2026", milestone: "Expanding our network" },
+const principles = [
+  { title: "Quality Work", description: "Zero compromise in workmanship and finish quality." },
+  { title: "Punctuality", description: "Disciplined project delivery within the committed time frame." },
+  { title: "Value for Money", description: "Services and products designed to deliver lasting value." },
+  { title: "Durability", description: "Solutions and support our clients can rely on long after delivery." },
 ];
 
 const team = [
   { name: "Waseem Alam", role: "Founder" },
-  { name: "Sajid Khan", role: "Senior Civil Engineer" },
+  {
+    name: "Sajid Khan",
+    role: "B.E. Civil",
+    image: "/WhatsApp%20Image%202026-06-11%20at%2022.02.09%20(1).jpeg",
+  },
   { name: "Arvind Kumar", role: "Project Manager" },
-  { name: "Huzaifa Hasan", role: "Architect" },
+  {
+    name: "Umaymah Sajid",
+    role: "Architect",
+    image: "/WhatsApp%20Image%202026-06-11%20at%2022.02.09.jpeg",
+  },
+];
+
+const clients = [
+  { name: "Worlds of Wonder", logo: "/client-logos/worlds-of-wonder.png" },
+  { name: "Country Inn & Suites", logo: "/client-logos/country-inn-suites.png" },
+  { name: "Cafe Coffee Day", logo: "/client-logos/cafe-coffee-day.png" },
+  { name: "World Trade Center Noida", logo: "/client-logos/world-trade-center-noida.png" },
+  { name: "Chaayos", logo: "/client-logos/chaayos.png" },
+  { name: "Parker Deluxe", logo: "/client-logos/parker-deluxe.png" },
+  { name: "Muskan", logo: "/client-logos/muskan.png" },
+  { name: "Paras Irene", logo: "/client-logos/paras-irene.png" },
+  { name: "Hotel Rajvanshi", logo: "/client-logos/hotel-rajvanshi.png" },
+  { name: "Paras Buildtech", logo: "/client-logos/paras-buildtech.png" },
+  { name: "The Paras World School", logo: "/client-logos/paras-world-school.png" },
+  { name: "Salcon", logo: "/client-logos/salcon.png" },
+  { name: "Silverglades", logo: "/client-logos/silverglades.png" },
+  { name: "Worlds of Wonder Water Park", logo: "/client-logos/worlds-of-wonder-water-park.png" },
+  { name: "City Public School", logo: "/client-logos/city-public-school.png" },
+  { name: "Jamia Co-operative Bank", logo: "/client-logos/jamia-cooperative-bank.png" },
+  { name: "Magnum", logo: "/client-logos/magnum.png" },
+  { name: "FK Entertainment", logo: "/client-logos/fk-entertainment.png" },
+  { name: "MF Perfect Construction", logo: "/client-logos/mf-perfect-construction.png" },
+  { name: "Engineer Ply", logo: "/client-logos/engineer-ply.png" },
 ];
 
 export default function AboutPage() {
@@ -36,7 +65,7 @@ export default function AboutPage() {
         <div className="container-dw">
           <h1 className="text-h1 mb-4">About DesignWaiz</h1>
           <p className="text-white/80 text-lg max-w-3xl">
-            We design homes and workspaces that feel refined, practical, and deeply personal — built around the way our clients actually live.
+            Complete in-house facade and interior solutions delivered by experienced professionals.
           </p>
         </div>
       </section>
@@ -45,8 +74,11 @@ export default function AboutPage() {
         <div className="container-dw space-y-10">
           <div className="bg-white rounded-lg p-8 lg:p-10 shadow-sm border border-dw-border">
             <h2 className="text-h2 mb-5">Our Story</h2>
+            <p className="text-dw-text-secondary leading-8 mb-4">
+              Established in 2015, DesignWaiz provides complete in-house solutions for facade and interior requirements. DesignWaiz is an extension of The Green Solutions, a well-known name in SHERA facade work across Delhi NCR since 2011.
+            </p>
             <p className="text-dw-text-secondary leading-8">
-              DesignWaiz is a premium interior design studio dedicated to transforming spaces into stunning, functional environments. We specialize in residential and commercial interiors across Delhi NCR and pan-India. Our philosophy is simple: understand the client deeply, design with clarity, and deliver with discipline. From modular kitchens and bespoke wardrobes to complete home and office interiors, we bring together design intelligence, strong execution systems, and transparent pricing.
+              Our team delivers creative design, renovation, project management, and execution solutions across residential, commercial, industrial, farmhouse, office, hospitality, retail, and entertainment spaces. Transparent communication, experienced professionals, and dependable delivery guide every project.
             </p>
           </div>
 
@@ -65,19 +97,21 @@ export default function AboutPage() {
         <div className="container-dw">
           <div className="grid lg:grid-cols-[1fr_1.1fr] gap-10 items-start">
             <div>
-              <h2 className="text-h2 mb-4">15 Years of Design Excellence</h2>
+              <p className="text-dw-mustard font-semibold mb-2">How We Work</p>
+              <h2 className="text-h2 mb-4">Our Company Principles</h2>
               <p className="text-dw-text-secondary leading-8 mb-8">
-                With 15+ years of experience, DesignWaiz has built a reputation for reliability, creativity, and timely delivery. Our journey has been shaped by a commitment to making refined interiors accessible to homeowners and businesses across North India.
+                Every DesignWaiz project is guided by four practical commitments that protect quality, timelines, budgets, and long-term performance.
               </p>
             </div>
 
-            <div className="space-y-4">
-              {timeline.map((item) => (
-                <div key={item.year} className="bg-white rounded-lg p-5 shadow-sm border border-dw-border flex gap-4 items-start">
-                  <div className="min-w-16 rounded-lg bg-dw-mustard/15 text-dw-mustard px-4 py-2 font-semibold text-center whitespace-nowrap">
-                    {item.year}
+            <div className="grid sm:grid-cols-2 gap-4">
+              {principles.map((principle, index) => (
+                <div key={principle.title} className="bg-white rounded-lg p-5 shadow-sm border border-dw-border">
+                  <div className="w-10 h-10 rounded-lg bg-dw-mustard/15 text-dw-mustard flex items-center justify-center font-semibold mb-4">
+                    {index + 1}
                   </div>
-                  <p className="text-dw-text-secondary leading-7">{item.milestone}</p>
+                  <h3 className="font-heading text-xl font-semibold mb-2">{principle.title}</h3>
+                  <p className="text-dw-text-secondary leading-7">{principle.description}</p>
                 </div>
               ))}
             </div>
@@ -86,6 +120,35 @@ export default function AboutPage() {
       </section>
 
       <section className="section-padding">
+        <div className="container-dw">
+          <div className="text-center mb-10">
+            <p className="text-dw-mustard font-semibold mb-2">Trusted Relationships</p>
+            <h2 className="text-h2 mb-3">Brand Associates & Prestigious Clients</h2>
+            <p className="text-dw-text-secondary text-lg max-w-2xl mx-auto">
+              Organizations that have trusted DesignWaiz for facade, interior, and execution solutions.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {clients.map((client) => (
+              <div
+                key={client.name}
+                className="h-28 bg-white rounded-lg border border-dw-border shadow-sm flex items-center justify-center p-3"
+              >
+                <Image
+                  src={client.logo}
+                  alt={client.name}
+                  width={260}
+                  height={176}
+                  className="max-h-20 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-dw-bg-secondary">
         <div className="container-dw grid lg:grid-cols-[320px_1fr] gap-10 items-center">
           <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-sm border border-dw-border">
             <Image
@@ -122,8 +185,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {team.map((member) => (
               <div key={member.name} className="bg-white rounded-lg p-6 text-center shadow-sm border border-dw-border hover:-translate-y-0.5 transition-transform">
-                <div className="w-24 h-24 mx-auto rounded-lg bg-dw-bg-secondary flex items-center justify-center text-2xl font-semibold text-dw-mustard mb-4">
-                  {member.name.split(" ").map((part) => part[0]).join("")}
+                <div className="w-24 h-24 mx-auto rounded-lg overflow-hidden bg-dw-bg-secondary mb-4">
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={200}
+                      height={240}
+                      className="h-full w-full object-cover object-top"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-2xl font-semibold text-dw-mustard">
+                      {member.name.split(" ").map((part) => part[0]).join("")}
+                    </div>
+                  )}
                 </div>
                 <h3 className="font-heading text-xl mb-1">{member.name}</h3>
                 <p className="text-sm text-dw-text-secondary">{member.role}</p>

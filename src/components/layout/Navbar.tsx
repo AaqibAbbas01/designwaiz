@@ -35,11 +35,9 @@ export default function Navbar() {
 
   const navBg = scrolled || isDesignsPage || pathname !== "/"
     ? "bg-white/95 backdrop-blur-sm shadow-[0_2px_20px_rgba(0,0,0,0.08)]"
-    : "bg-transparent";
+    : "bg-white/75 backdrop-blur-md border-b border-white/40 shadow-[0_2px_20px_rgba(0,0,0,0.08)]";
 
-  const textColor = scrolled || isDesignsPage || pathname !== "/"
-    ? "text-[#1A1A1A]"
-    : "text-white";
+  const textColor = "text-[#1A1A1A]";
 
   const isActiveLink = (href: string) => {
     if (href === "/designs") return pathname === "/designs";
