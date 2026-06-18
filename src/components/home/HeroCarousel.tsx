@@ -21,7 +21,7 @@ interface Slide {
 const SLIDES: Slide[] = [
   {
     id: 1,
-    image: "/images/Facade & Others/unnamed-9.jpg",
+    image: "/images/Facade & Others/unnamed-10.jpg",
     headline: "Facades That Make a Statement",
     subtext: "Your building's exterior is the first story it tells. We design facades that command attention, reflect architectural intent, and stand the test of time — from refined stone cladding to contemporary glass and metal finishes.",
     cta: "Explore Facades",

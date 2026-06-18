@@ -45,7 +45,6 @@ function localImages(category: string, paths: string[]): DesignImage[] {
 // ── Raw local image paths per category (JPG/JPEG/PNG only) ──
 
 const KITCHEN_IMAGES = [
-  "/images/MODULAR KITCHEN/25662bdf-ac56-4e1c-986e-9237f5d24576 2.JPG",
   "/images/MODULAR KITCHEN/25662bdf-ac56-4e1c-986e-9237f5d24576.JPG",
   "/images/MODULAR KITCHEN/32dba686-7b98-410b-82c4-705c146dcdf5 2.JPG",
   "/images/MODULAR KITCHEN/49257b80-8853-4ad4-afa0-ebb577295fbc 2.JPG",
@@ -65,9 +64,7 @@ const KITCHEN_IMAGES = [
   "/images/MODULAR KITCHEN/PHOTO-2024-03-25-12-42-53 2.jpg",
   "/images/MODULAR KITCHEN/PHOTO-2024-03-25-12-42-53 3.jpg",
   "/images/MODULAR KITCHEN/PHOTO-2024-03-25-12-42-53.jpg",
-  "/images/MODULAR KITCHEN/PHOTO-2024-03-25-12-42-54.jpg",
   "/images/MODULAR KITCHEN/f155dc0c-a4f1-4116-99ac-280e6b30a570 2.JPG",
-  "/images/MODULAR KITCHEN/fe5dfb61-d0e2-41fd-a796-b0655a3f7ee8 2.JPG",
   "/images/MODULAR KITCHEN/fe5dfb61-d0e2-41fd-a796-b0655a3f7ee8.JPG",
 ];
 
@@ -86,19 +83,15 @@ const WARDROBE_IMAGES = [
 
 const LIVING_IMAGES = [
   "/images/LIVING ROOM/25c79aad-b665-4ea3-a417-1ad70299a26a.JPG",
-  "/images/LIVING ROOM/2c40d78c-2e57-4eb1-8e64-253a116d92fa 2.JPG",
-  "/images/LIVING ROOM/2c520ee2-1975-4eda-9f73-5a5ea6f994e9 2.JPG",
   "/images/LIVING ROOM/2c520ee2-1975-4eda-9f73-5a5ea6f994e9.JPG",
   "/images/LIVING ROOM/73ea888d-9472-4ed6-b98b-6c85586f7521 2.JPG",
   "/images/LIVING ROOM/8e521f96-0828-4204-9c1e-16d72fd854e6.JPG",
-  "/images/LIVING ROOM/959bdb90-2e9d-4ad1-98db-0d9baee4d5c9 2.JPG",
   "/images/LIVING ROOM/9675429d-595b-482e-b0d4-63e12f8efea5.JPG",
   "/images/LIVING ROOM/IMG_4258.JPG",
   "/images/LIVING ROOM/IMG_4262.JPG",
   "/images/LIVING ROOM/IMG_4270.JPG",
   "/images/LIVING ROOM/IMG_4365.JPG",
   "/images/LIVING ROOM/IMG_4378.JPG",
-  "/images/LIVING ROOM/eaf7dffb-1808-4209-8a3b-d7780d8072be 2.JPG",
   "/images/LIVING ROOM/ef822e06-1c87-4101-9b07-f0cbcb197269 2.JPG",
   "/images/LIVING ROOM/f2b303b8-a1bf-4bde-a842-81eaf8b009b4 2.JPG",
   "/images/LIVING ROOM/f62f4e86-5f74-428b-b8fe-fc229134ce6b 2.JPG",
@@ -130,8 +123,6 @@ const BEDROOM_IMAGES = [
   "/images/MASTER BEDROOM/IMG_4276.JPG",
   "/images/MASTER BEDROOM/IMG_4280.JPG",
   "/images/MASTER BEDROOM/IMG_4282.JPG",
-  "/images/MASTER BEDROOM/IMG_4405.JPG",
-  "/images/MASTER BEDROOM/IMG_4406.JPG",
   "/images/MASTER BEDROOM/IMG_4410.JPG",
   "/images/MASTER BEDROOM/IMG_4418.JPG",
   "/images/MASTER BEDROOM/IMG_4422.JPG",
@@ -149,7 +140,6 @@ const BEDROOM_IMAGES = [
   "/images/MASTER BEDROOM/KLOF0572.JPG",
   "/images/MASTER BEDROOM/WRSU7616.JPG",
   "/images/MASTER BEDROOM/a1c2c0ce-76f7-4e00-b1a1-ff9699b52d61.JPG",
-  "/images/MASTER BEDROOM/d5edb0c7-9c32-4039-aebf-601a45cdd244.JPG",
 ];
 
 const TV_IMAGES = [
@@ -169,7 +159,6 @@ const TV_IMAGES = [
 
 const MANDIR_IMAGES = [
   "/images/MANDIR/3b37b3db-3b14-46da-a860-4276dfae1cf7 2.JPG",
-  "/images/MANDIR/6cda4272-52c2-457f-8bc6-33f4219d787b 2.JPG",
   "/images/MANDIR/6cda4272-52c2-457f-8bc6-33f4219d787b.JPG",
   "/images/MANDIR/9ed605bd-ef23-4405-8b84-c3df57158716 2.JPG",
   "/images/MANDIR/IMG_4302.JPG",
@@ -179,7 +168,6 @@ const MANDIR_IMAGES = [
   "/images/MANDIR/IMG_4714.PNG",
   "/images/MANDIR/c9b2a716-092a-404e-a097-18e53f106366 2.JPG",
   "/images/MANDIR/ccdaff2f-2b1c-48e5-b83e-bfb25ee91178 2.JPG",
-  "/images/MANDIR/cdf617dd-c5cc-4fbe-a6ad-32bc56fd2fbf 2.JPG",
   "/images/MANDIR/cdf617dd-c5cc-4fbe-a6ad-32bc56fd2fbf.JPG",
   "/images/MANDIR/d329dbe0-58f8-4ca6-8e06-e00b56ab7373 2.JPG",
 ];
@@ -199,7 +187,6 @@ const DINING_IMAGES = [
 
 const WALL_IMAGES = [
   "/images/WALL DESIGN/22e27202-1dd2-44f8-b063-82ece808733a 2.JPG",
-  "/images/WALL DESIGN/79dccc79-487c-43fc-bb8a-91e7eff2b25f 2.JPG",
   "/images/WALL DESIGN/79dccc79-487c-43fc-bb8a-91e7eff2b25f.JPG",
   "/images/WALL DESIGN/IMG_1136.JPG",
   "/images/WALL DESIGN/IMG_1137.JPG",
@@ -243,11 +230,8 @@ const FACADE_IMAGES = [
   "/images/Facade & Others/239783342baf7bb06437d42f2e342b24.jpg",
   "/images/Facade & Others/A 2.JPG",
   "/images/Facade & Others/A-6, Landcraft.jpeg",
-  "/images/Facade & Others/Afromosia brown plank.jpeg",
   "/images/Facade & Others/DSC00064.JPG",
-  "/images/Facade & Others/Final_Jasola_2.jpeg",
   "/images/Facade & Others/ICE Home Night.jpg",
-  "/images/Facade & Others/IMG-0177.JPG",
   "/images/Facade & Others/IMG-0205.JPG",
   "/images/Facade & Others/IMG-0263.JPG",
   "/images/Facade & Others/IMG-0269.JPG",
@@ -265,8 +249,6 @@ const FACADE_IMAGES = [
   "/images/Facade & Others/IMG_3762.JPG",
   "/images/Facade & Others/IMG_4235.JPG",
   "/images/Facade & Others/IMG_4236.JPG",
-  "/images/Facade & Others/IMG_5515.JPG",
-  "/images/Facade & Others/IMG_5516.JPG",
   "/images/Facade & Others/Sec.50 Noida SBF 10 mm.JPG",
   "/images/Facade & Others/Sector-26, Noida.jpg",
   "/images/Facade & Others/Shera Plank AFB Farm House TGS.jpeg",
@@ -287,8 +269,6 @@ const FACADE_IMAGES = [
   "/images/Facade & Others/unnamed-10.jpg",
   "/images/Facade & Others/unnamed-12.jpg",
   "/images/Facade & Others/unnamed-4 5.06.25 PM.jpg",
-  "/images/Facade & Others/unnamed-6.jpg",
-  "/images/Facade & Others/unnamed-9.jpg",
   "/images/Facade & Others/wooden-designer-main-gate-500x500.jpg",
 ];
 
@@ -306,7 +286,6 @@ const OFFICE_IMAGES = [
   "/images/CORPORATE OFFICE/3e7f34ec-d07e-4266-bc3a-179f74effb74.JPG",
   "/images/CORPORATE OFFICE/7c673a45-ec8c-4be1-8d11-e6dec5f85c22.JPG",
   "/images/CORPORATE OFFICE/PHOTO-2026-01-11-15-51-44 2.jpg",
-  "/images/CORPORATE OFFICE/PHOTO-2026-01-11-15-51-44.jpg",
   "/images/CORPORATE OFFICE/Screenshot 2019-02-09 at 6.01.23 PM.png",
   "/images/CORPORATE OFFICE/Screenshot 2019-02-09 at 6.01.43 PM.png",
   "/images/CORPORATE OFFICE/Screenshot 2019-02-09 at 6.02.02 PM.png",
@@ -347,7 +326,6 @@ const BATHROOM_IMAGES = [
 ];
 
 const DOOR_IMAGES = [
-  "/images/DOOR DESIGN/66a1f8b6-0126-4463-a1de-3cccf990b56c 2.JPG",
   "/images/DOOR DESIGN/66a1f8b6-0126-4463-a1de-3cccf990b56c.JPG",
   "/images/DOOR DESIGN/IMG_1110.JPG",
   "/images/DOOR DESIGN/IMG_1111.JPG",
@@ -362,9 +340,7 @@ const DOOR_IMAGES = [
   "/images/DOOR DESIGN/WhatsApp Image 2019-30 at 15.22.00.jpeg",
   "/images/DOOR DESIGN/WhatsApp Image019-12-30 at 15.22.00.jpeg",
   "/images/DOOR DESIGN/ojj.jpeg",
-  "/images/DOOR DESIGN/okok.jpeg",
   "/images/DOOR DESIGN/okokoko.jpeg",
-  "/images/DOOR DESIGN/wajj.jpeg",
 ];
 
 const CROCKERY_IMAGES = [
@@ -415,7 +391,7 @@ export const DESIGN_CATEGORIES: DesignCategory[] = [
   { id: "door-design", name: "Door Design", slug: "door-design", thumbnail: "/images/DOOR DESIGN/IMG_1110.JPG", count: DOOR_IMAGES.length },
   { id: "crockery-unit", name: "Crockery Unit", slug: "crockery-unit", thumbnail: "/images/CROCKERY UNIT/IMG_4498.JPG", count: CROCKERY_IMAGES.length },
   { id: "study-room", name: "Study Room", slug: "study-room", thumbnail: "/images/STUDY ROOM/IMG_4125.JPG", count: STUDY_IMAGES.length },
-  { id: "corporate-office", name: "Corporate Office", slug: "corporate-office", thumbnail: "/images/CORPORATE OFFICE/PHOTO-2026-01-11-15-51-44.jpg", count: OFFICE_IMAGES.length },
+  { id: "corporate-office", name: "Corporate Office", slug: "corporate-office", thumbnail: "/images/CORPORATE OFFICE/3e7f34ec-d07e-4266-bc3a-179f74effb74.JPG", count: OFFICE_IMAGES.length },
 ];
 
 // ── All Images ────────────────────────────────────────────
