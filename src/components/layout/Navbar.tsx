@@ -56,14 +56,17 @@ export default function Navbar() {
         <div className="container-dw">
           <nav className="flex items-center justify-between h-24 lg:h-28 gap-6 lg:gap-10">
             {/* Logo */}
-            <Link href="/" className="flex items-center flex-shrink-0 min-w-[180px] lg:min-w-[280px]">
+            <Link
+              href="/"
+              className="flex items-center flex-shrink-0 min-w-[168px] lg:min-w-[280px]"
+            >
               <Image
                 src="/logodesignwaiz.png"
                 alt="DesignWaiz"
                 width={612}
                 height={408}
                 priority
-                className="w-[170px] lg:w-[280px] h-auto"
+                className="h-auto w-[156px] rounded-md bg-white px-2 py-1 shadow-[0_4px_16px_rgba(0,0,0,0.14)] ring-1 ring-black/5 lg:w-[280px] lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0"
               />
             </Link>
 

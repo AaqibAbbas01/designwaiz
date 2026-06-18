@@ -81,8 +81,8 @@ export default function BottomCTA() {
           {/* Right: Image */}
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-sm border border-dw-border">
             <Image
-              src="/images/LIVING ROOM/IMG_4365.JPG"
-              alt="Beautiful living room interior"
+              src="/images/DINING TABLE/PHOTO-2024-04-20-15-09-35 3.jpg"
+              alt="Beautiful dining interior"
               fill
               className="object-cover"
             />
